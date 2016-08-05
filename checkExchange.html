@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>兑换查询</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+  <meta name="format-detection" content="telephone=no"/>
+
+  <link rel="stylesheet" href="css/mui.min.css"  />
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/yang.css">
+
+  <script src="js/jquery-1.11.1.js"></script>
+  <script src="js/mui.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/common.js"></script>
+</head>
+<body>
+
+<div id="model" class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document" style="width: 90%;margin: 2.5rem auto">
+    <div class="modal-content">
+      <div class="modal-body" style="position: relative">
+        <ul>
+          <li>运单号码：XXXXXXXX</li>
+          <li>物流公司：XXXXX</li>
+          <li>收货人：XXX</li>
+          <li>收货人电话：XXXXXXX</li>
+          <li>收货人地址：XXXX</li>
+          <li>如想查到订单详情，请到XX物流公司官网进行查看</li>
+        </ul>
+        <a type="button" class="btn-close mui-icon mui-icon-closeempty" data-dismiss="modal"></a>
+        <button type="button" class="btn-lg-close" data-dismiss="modal">关闭</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="mui-content" id="checkExchange">
+  <ul class="mui-table-view">
+    <li class="mui-table-view-cell">
+        <div class="col-xs-4 noPaddingL">
+          <img class="img-responsive" src="img/duihuan_03.jpg" alt="">
+        </div>
+        <div class="col-xs-8 noPaddingL">
+          <p>价值XX元加油卡一张价值XX元加油卡一张 </p>
+          <div class="clear">
+            <span class="subtractCount pull-left">-150分</span>
+            <a href="" class="pull-right btn-status isDistribution">配送中</a>
+          </div>
+        </div>
+    </li>
+    <li class="mui-table-view-cell">
+      <div class="col-xs-4 noPaddingL">
+        <img class="img-responsive" src="img/duihuan_03.jpg" alt="">
+      </div>
+      <div class="col-xs-8 noPaddingL">
+        <p>价值XX元加油卡一张价值XX元加油卡一张 </p>
+        <div class="clear">
+          <span class="subtractCount pull-left">-150分</span>
+          <a href="" class="pull-right btn-status hasSend">已发货</a>
+        </div>
+      </div>
+    </li>
+    <li class="mui-table-view-cell">
+      <div class="col-xs-4 noPaddingL">
+        <img class="img-responsive" src="img/duihuan_03.jpg" alt="">
+      </div>
+      <div class="col-xs-8 noPaddingL">
+        <p>价值XX元加油卡一张价值XX元加油卡一张 </p>
+        <div class="clear">
+          <span class="subtractCount pull-left">-150分</span>
+          <a href="" class="pull-right btn-status notSend">未发货</a>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
+
+
+<script>
+  $(function(){
+    $('#checkExchange li').on('click',function(){
+      $('#model').modal();
+    })
+  })
+</script>
+</body>
+</html>

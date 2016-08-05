@@ -1,0 +1,86 @@
+/*.epayHeader{height: 1.5rem;background: #fff;}*/
+/*.epayHeader a,.epayHeader h1{font-size: 0.5rem;line-height: 1.5rem;color: #333;}*/
+.clear:after{
+    display: block;
+    content: '';
+    clear: both;
+    overflow: hidden;
+}
+.clear{zoom:1}
+a{color: #333;text-decoration: none;}
+a:hover{color: #333;text-decoration: none;}
+
+/*个人中心*/
+.userHeader{background: url("../img/userBac.jpg") no-repeat;overflow: hidden;background-size: 100% 100%;}
+.userHeader .mui-grid-view{background: none;border: none;}
+.userHeader .mui-grid-view .mui-table-view-cell{border: none;}
+.userPic img{border-radius: 50%;display: block;margin: 0.4rem auto;width: 22%;}
+.userName{font-size: 0.45rem;line-height: 0.6rem;color: #fff;text-align: center;}
+.userHeader ul li img{width: 30%;display: block;margin: 0.1rem auto;}
+.userHeader ul li p{color: #fff;font-size: 0.35rem;line-height: 0.5rem;}
+.userHeader ul li p:last-child{font-size: 0.25rem;}
+
+.userList{background: #f1f1f1!important;padding-bottom: 1.8rem;}
+.userList h3{font-size: 0.3rem;line-height:0.5rem;padding: 0.5rem 0 0.2rem 0.5rem;color: #999;}
+.infoList{height: 1.5rem;margin: 0.3rem 0;background: #fff;padding: 0.4rem;position: relative;display: block;color: #333}
+.userList a.infoList:after{content:'\e583';top:50%;font-size: 0.8rem;color: #cbcbcb;}
+.infoList img{max-height: 0.7rem;margin-right: 0.4rem;vertical-align: middle}
+.infoList span{font-size: 0.4rem;line-height: 0.45rem;vertical-align: middle}
+
+
+.changeName h3{font-size: 0.5rem;line-height:1.5rem;color: #999;padding-left: 0.4rem;}
+.changeName{position: relative;margin-top: 1rem;}
+.changeName form{background: #fff;}
+.changeName input{border:none;border-radius: 0;height: 1.5rem;margin: 0;}
+.changeName span{position: absolute;top:0;right: 0.5rem;height: 1.5rem;line-height: 1.5rem;}
+
+
+#myCount{padding-top: 0.7rem;}
+#myCount .infoList span{line-height: 0.75rem;}
+#myCount div.infoList span:last-child{display: block;text-align: center}
+.infoList .btn-count{background: #79ccbf;color: #fff;padding: 0.1rem 0.5rem;border-radius: 0.5rem;}
+
+#checkCount ul{margin-top: 0.6rem;padding-bottom: 1.8rem;}
+#checkCount ul li{padding: 0.5rem 0.3rem;}
+#checkCount ul li div{font-size: 0.4rem;line-height: 0.5rem;}
+#checkCount ul li p{font-size: 0.35rem;line-height: 0.5rem;color: #666;}
+.addCount{color: #79ccbf;}
+.subtractCount{color: #f38a74;}
+.mui-table-view:after,.mui-table-view:before{height: 0;}
+.mui-table-view-cell:after{left: 0px;}
+#checkCount .mui-table-view-cell:last-child:after{height: 1px;}
+
+#checkExchange ul{margin-top: 0.6rem;}
+#checkExchange ul li p{font-size: 0.4rem;line-height: 0.6rem;color: #333;margin-bottom: 0.3rem;}
+.btn-status{padding: 0.05rem 0.2rem;color: #fff;font-size: 0.3rem;border-radius: 3px;}
+.isDistribution{background: #f8b268;}
+.hasSend{background: #1ab394;}
+.notSend{background: #1c84c6;}
+.checkTask{background: #f38a74;}
+.btn-close{width: 0.7rem;height: 0.7rem;background: #79ccbf;border-radius: 50%;display: inline-block;line-height: 0.7rem;
+    text-align: center;position: absolute;color: #fff;top:-0.35rem;right: -0.35rem;font-size: 0.7rem}
+.modal-body ul li{font-size: 0.4rem;line-height: 0.6rem;padding: 0.1rem;}
+.btn-lg-close{display: block;width: 70%;margin: 0.45rem auto;background: #f38a74;color: #fff;font-size: 0.4rem;
+    border:1px solid #f38a74;padding: 0.3rem 0;}
+
+.taskHeader{text-align: center;background: #e1e1e1;font-size: 0.5rem;line-height: 1.5rem;}
+.taskHeader a{display: block;}
+.taskHeader div:first-child{border-right: 1px solid #fff;}
+.taskActive{background: #79ccbf;}
+.taskActive a{color: #fff;}
+.green{color: #79ccbf;}
+.orange{color: #f8ac59;}
+.blue{color: #1c84c6;}
+.red{color: #ed5565;}
+.taskList{margin-top: 0.5rem;}
+.taskList ul li{padding: 0.4rem 15px;font-size: 0.35rem;}
+.taskList ul li p{font-size: 0.35rem;}
+.taskList ul li div{margin: 0.15rem 0;}
+.taskList ul li div:first-child span:first-child{font-size: 0.45rem;margin-right: 0.35rem;}
+
+#taskSchedule ul li{padding: 0;}
+#taskSchedule ul li>div{margin: 11px 10% 11px 15px;overflow: hidden}
+#taskSchedule ul li div.mui-navigate-right:after{content:'\e583';top:50%;font-size: 0.8rem;color: #cbcbcb;}
+/*#taskSchedule .mui-navigate-right:after{h}*/
+
+
