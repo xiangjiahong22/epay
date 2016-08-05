@@ -1,0 +1,92 @@
+/*common style 2016-08-04*/
+html,body{font-family: "微软雅黑"!important;}
+html,body,h1,h2,h3,h4,h5,h6,div,p,img,a,form,input,textarea,ul,li,dl,dt,dd{margin: 0;padding: 0;list-style: none;}
+
+.noMargin{margin: 0!important;}
+.noPadding{padding:0!important;}
+.noPaddingL{padding-left: 0;}
+.noPaddingR{padding-right: 0;}
+.miniPadding{padding: 0 10px!important;}
+.miniPaddingL{padding-left: 10px;}
+.miniPaddingR{padding-right: 10px;}
+
+.mui-slider-indicator .mui-indicator{background: #fff;border-color: #d2d2d2;box-shadow: none;width: 8px;height: 8px;}
+.mui-slider-indicator .mui-active.mui-indicator{background: #7accbe;border-color: #7accbe;;}
+/*index 首页*/
+.serviceList{overflow: hidden;padding-top: 0.35rem}
+.serviceList li{float: left;width: 1.7rem;margin: 0 0.15rem;margin-bottom: 0.35rem;text-align: center;}
+.serviceList li img{width: 1.5rem;height: 1.5rem;display: inline-block;}
+.serviceList li h4{font-size: 0.33rem;color: #333;margin-top: 0.15rem;}
+
+.insuranceAdvice h3{color: #333;font-size: 0.35rem;margin-bottom: 0.15rem;margin-top: 0.15rem;}
+.insuranceAdvice li{padding:0.45rem 0.15rem!important;border-right: 1px solid #ededed;}
+.insuranceAdvice li:last-child{border-right: 0;}
+.insuranceAdvice li p{font-size: 0.3rem;}
+
+.mainTit{font-size: 0.4rem;font-weight: normal;padding: 0.35rem 0.15rem;border-bottom: 1px solid #ededed;}
+.infoModule{background: #fff;margin: 0.5rem 0;}
+.infoModule .insuranceAdvice{background: #fff;}
+.appraisal h3{font-size: 0.35rem;padding-top: 0.45rem;margin-bottom: 0.2rem;}
+.appraisal li{text-align: center;border-right: 1px solid #ededed;}
+.appraisal li:last-child{border-right: none;}
+.appraisal a{display: inline-block;}
+.appraisal li p.tips{color: #999999;font-size: 0.35rem;}
+.appraisal a h3,.appraisal a .tips{color: #333;}
+
+/*epay 易赔*/
+.epayList{background: #fff!important;overflow: hidden;}
+.epayList li:nth-of-type(n+4){border-bottom:0!important}
+.epayList .mui-media-body{color: #666666!important;}
+.epayList li .epayIcon img{width: 1rem;margin-bottom: 0.2rem;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
