@@ -75,10 +75,23 @@
 				</div>
 			</div>
 			<div class="fullSubBtn">
-				<input type="submit" value="提 交"/>
+				<input type="submit" value="提 交" id="subClaim"/>
 			</div>
 		</div>
-		
+		<script>
+			mui.init();
+			document.getElementById("subClaim").addEventListener('tap', function() {
+				var btnArray = ['否', '是'];
+				mui.confirm('MUI是个好框架，确认？', 'Hello MUI', btnArray, function(e) {
+					if (e.index == 1) {
+						
+					} else {
+						
+					}
+				})
+			});
+			
+		</script>
 	</body>
 
 </html>

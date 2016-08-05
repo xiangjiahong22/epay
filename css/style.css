@@ -32,6 +32,10 @@ textarea::-webkit-input-placeholder {
 .mui-slider-indicator .mui-indicator{background: #fff;border-color: #d2d2d2;box-shadow: none;width: 8px;height: 8px;}
 .mui-slider-indicator .mui-active.mui-indicator{background: #7accbe;border-color: #7accbe;}
 
+.mui-popup{position: fixed;}
+
+.mui-input-row label{width: 37%;}
+.mui-input-row label~input{width: 63%;}
 /*common*/
 .fullSubBtn input{background-color: #f38a74!important;color: #fff;border-radius: 0;height: 1.2rem;width: 100%;
 	border: 0;font-size: 0.45rem;transition:none}
@@ -76,7 +80,7 @@ textarea::-webkit-input-placeholder {
 .claimToggleCon .lineModule .body .rightInfo{padding-left: 16.666%;margin-left: 10px;;}
 .claimToggleCon .lineModule .body .textArea{height: 2rem;padding: 0.3rem;font-size: 0.4rem;border: none;}
 .claimToggleCon .lineModule .body .posArea{background: url(../img/posBg.png) #fff no-repeat 15px 15px;background-size: 6%;text-indent: 1.5em;
-	line-height: 0.75rem;}
+	line-height: 0.75rem;height: 2.3rem;}
 .claimToggleCon .lineModule .body .telArea{height: 1.2rem;}
 .claimToggleCon .lineModule:last-child .body{padding-bottom: 0.8rem;}
 
@@ -95,18 +99,22 @@ textarea::-webkit-input-placeholder {
 .claimArticle .articleModule p{line-height: 0.6rem;text-indent: 2em;font-size: 0.38rem;}
 .claimHelpList .mui-navigate-right{display: table-cell;width: 12%;min-height: 1rem;}
 
+/*serviceProvide 公估服务商*/
+.serviceForm{background: none;}
+.verifyCode{display: inline-block;position: relative;width: 63%;}
+.verifyCode input{padding-left: 0;}
+.verifyCode .wechatPos{position: absolute;right: 15px;bottom: 7px;background: #79ccbf;}
 
+.serviceModule{margin-bottom: 0.5rem;background: #fff;}
+.serviceModule .mui-input-row:nth-child(3):after{background: none;}
+.serviceModule .getWechatPos{padding: 15px;background: url(../img/posBg.png) no-repeat 15px 15px;background-size: 5%;
+	text-indent: 2em;}
+.verifyCodeArea{position: relative;}
+.verifyCodeArea .wechatPos{right: 15px;top: -23px;position: absolute;background: #79ccbf;}
 
-
-
-
-
-
-
-
-
-
-
+.serviceUpload{padding: 15px;}
+.serviceUpload .serviceUploadTit{font-size: 0.38rem;margin-bottom: 0.3rem;}
+.serviceUpload .mui-input-row{margin-bottom: 0.3rem;}
 
 
 
