@@ -34,8 +34,8 @@ textarea::-webkit-input-placeholder {
 
 .mui-popup{position: fixed;}
 
-.mui-input-row label{width: 37%;}
-.mui-input-row label~input{width: 63%;}
+.serviceForm .mui-input-row label{width: 37%;}
+.serviceForm .mui-input-row label~input{width: 63%;}
 label{font-weight: normal}
 /*common*/
 .fullSubBtn input,.fullSubBtn a{background-color: #f38a74!important;color: #fff;border-radius: 0;height: 1.3rem;width: 100%;
