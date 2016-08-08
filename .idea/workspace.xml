@@ -2,10 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="90e0f02b-ed95-4c88-9059-4a4fd9f7128f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/addCreditCard.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myCreditCard.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/arrowDown.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/card1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myAccount.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/serviceDetail.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/serviceRate.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taskDetail.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/addCreditCard.html" afterPath="$PROJECT_DIR$/addCreditCard.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/yang.css" afterPath="$PROJECT_DIR$/css/yang.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/insuranceClaimHelp.html" afterPath="$PROJECT_DIR$/insuranceClaimHelp.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myAcTaskSchedule.html" afterPath="$PROJECT_DIR$/myAcTaskSchedule.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myCreditCard.html" afterPath="$PROJECT_DIR$/myCreditCard.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taskSchedule.html" afterPath="$PROJECT_DIR$/taskSchedule.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/userCenter.html" afterPath="$PROJECT_DIR$/userCenter.html" />
     </list>
     <ignored path="epay.iws" />
@@ -27,44 +36,49 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="userCenter.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/userCenter.html">
+      <file leaf-file-name="serviceRate.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/serviceRate.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-18.892857">
-              <caret line="79" column="60" selection-start-line="79" selection-start-column="42" selection-end-line="79" selection-end-column="60" />
+            <state vertical-scroll-proportion="-3.9285715">
+              <caret line="5" column="2" selection-start-line="5" selection-start-column="2" selection-end-line="16" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="myAccount.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/myAccount.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-28.607143">
+              <caret line="68" column="9" selection-start-line="68" selection-start-column="9" selection-end-line="68" selection-end-column="9" />
               <folding>
-                <element signature="n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#ul#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="myCreditCard.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/myCreditCard.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-19.178572">
-              <caret line="40" column="31" selection-start-line="40" selection-start-column="31" selection-end-line="40" selection-end-column="31" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="addCreditCard.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/addCreditCard.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.41656804">
-              <caret line="16" column="33" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="yang.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="yang.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/yang.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.412371">
-              <caret line="115" column="62" selection-start-line="115" selection-start-column="62" selection-end-line="115" selection-end-column="62" />
+            <state vertical-scroll-proportion="0.8582474">
+              <caret line="130" column="59" selection-start-line="130" selection-start-column="59" selection-end-line="130" selection-end-column="59" />
+              <caret line="129" column="61" selection-start-line="129" selection-start-column="61" selection-end-line="129" selection-end-column="61" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="userCenter.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/userCenter.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-25.678572">
+              <caret line="88" column="47" selection-start-line="88" selection-start-column="47" selection-end-line="88" selection-end-column="47" />
+              <folding>
+                <element signature="n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#style#0;n#h3#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h3#2;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -86,16 +100,21 @@
       <list>
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/checkExchange.html" />
-        <option value="$PROJECT_DIR$/taskSchedule.html" />
         <option value="$PROJECT_DIR$/taskMan.html" />
         <option value="$PROJECT_DIR$/myAcTask.html" />
         <option value="$PROJECT_DIR$/taskInsurance.html" />
-        <option value="$PROJECT_DIR$/myAcTaskSchedule.html" />
         <option value="$PROJECT_DIR$/css/style.css" />
-        <option value="$PROJECT_DIR$/userCenter.html" />
-        <option value="$PROJECT_DIR$/css/yang.css" />
-        <option value="$PROJECT_DIR$/myCreditCard.html" />
         <option value="$PROJECT_DIR$/addCreditCard.html" />
+        <option value="$PROJECT_DIR$/myCreditCard.html" />
+        <option value="$PROJECT_DIR$/insuranceClaimHelp.html" />
+        <option value="$PROJECT_DIR$/taskDetail.html" />
+        <option value="$PROJECT_DIR$/myAcTaskSchedule.html" />
+        <option value="$PROJECT_DIR$/taskSchedule.html" />
+        <option value="$PROJECT_DIR$/serviceRate.html" />
+        <option value="$PROJECT_DIR$/serviceDetail.html" />
+        <option value="$PROJECT_DIR$/userCenter.html" />
+        <option value="$PROJECT_DIR$/myAccount.html" />
+        <option value="$PROJECT_DIR$/css/yang.css" />
       </list>
     </option>
   </component>
@@ -355,14 +374,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/insuranceClaim.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-45.892857">
-          <caret line="109" column="8" selection-start-line="109" selection-start-column="8" selection-end-line="109" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/taskInsurance.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.895858">
@@ -383,10 +394,65 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/addCreditCard.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.5">
+          <caret line="19" column="36" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="36" />
+          <folding>
+            <element signature="n#style#0;n#button#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myCreditCard.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-34.892857">
+          <caret line="57" column="1" selection-start-line="57" selection-start-column="1" selection-end-line="57" selection-end-column="1" />
+          <folding>
+            <element signature="n#style#0;n#a#0;n#li#0;n#ul#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#li#1;n#ul#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/integralExchange.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/insuranceClaim.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-21.75">
+          <caret line="109" column="8" selection-start-line="0" selection-start-column="0" selection-end-line="115" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/insuranceClaimHelp.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="25.142857">
+          <caret line="245" column="56" selection-start-line="245" selection-start-column="56" selection-end-line="245" selection-end-column="56" />
+          <folding>
+            <element signature="n#style#0;n#head#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taskDetail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-23.892857">
+          <caret line="90" column="0" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/myAcTaskSchedule.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.13017751">
-          <caret line="5" column="2" selection-start-line="5" selection-start-column="2" selection-end-line="16" selection-end-column="38" />
+        <state vertical-scroll-proportion="-14.25">
+          <caret line="81" column="32" selection-start-line="81" selection-start-column="32" selection-end-line="81" selection-end-column="32" />
           <folding>
             <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -397,11 +463,11 @@
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#input#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#a#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#ul#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#a#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#button#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#button#2;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -409,60 +475,91 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/myAcTask.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5988166">
-          <caret line="38" column="35" selection-start-line="38" selection-start-column="19" selection-end-line="38" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/taskSchedule.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.21893491">
-          <caret line="34" column="24" selection-start-line="0" selection-start-column="0" selection-end-line="82" selection-end-column="7" />
+        <state vertical-scroll-proportion="-3.9285715">
+          <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="16" selection-end-column="38" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/userCenter.html">
+    <entry file="file://$PROJECT_DIR$/mallDetails.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-18.892857">
-          <caret line="79" column="60" selection-start-line="79" selection-start-column="42" selection-end-line="79" selection-end-column="60" />
-          <folding>
-            <element signature="n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/yang.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.412371">
-          <caret line="115" column="62" selection-start-line="115" selection-start-column="62" selection-end-line="115" selection-end-column="62" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/myCreditCard.html">
+    <entry file="file://$PROJECT_DIR$/serviceProviderDeal.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-19.178572">
-          <caret line="40" column="31" selection-start-line="40" selection-start-column="31" selection-end-line="40" selection-end-column="31" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/serviceProvider.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.1668639">
-          <caret line="81" column="16" selection-start-line="81" selection-start-column="16" selection-end-line="81" selection-end-column="16" />
+        <state vertical-scroll-proportion="-29.607143">
+          <caret line="99" column="35" selection-start-line="0" selection-start-column="0" selection-end-line="107" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/addCreditCard.html">
+    <entry file="file://$PROJECT_DIR$/serviceDetail.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.41656804">
-          <caret line="16" column="33" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
+        <state vertical-scroll-proportion="-22.321428">
+          <caret line="53" column="35" selection-start-line="53" selection-start-column="35" selection-end-line="53" selection-end-column="35" />
+          <folding>
+            <element signature="n#style#0;n#a#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myAcTask.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.9893491">
+          <caret line="38" column="35" selection-start-line="0" selection-start-column="0" selection-end-line="95" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/serviceRate.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.9285715">
+          <caret line="5" column="2" selection-start-line="5" selection-start-column="2" selection-end-line="16" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/userCenter.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-25.678572">
+          <caret line="88" column="47" selection-start-line="88" selection-start-column="47" selection-end-line="88" selection-end-column="47" />
+          <folding>
+            <element signature="n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#h3#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h3#2;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myAccount.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-28.607143">
+          <caret line="68" column="9" selection-start-line="68" selection-start-column="9" selection-end-line="68" selection-end-column="9" />
+          <folding>
+            <element signature="n#ul#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/yang.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8582474">
+          <caret line="130" column="59" selection-start-line="130" selection-start-column="59" selection-end-line="130" selection-end-column="59" />
+          <caret line="129" column="61" selection-start-line="129" selection-start-column="61" selection-end-line="129" selection-end-column="61" />
           <folding />
         </state>
       </provider>
