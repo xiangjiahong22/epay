@@ -193,14 +193,15 @@ label{font-weight: normal}
 .addAddrBtn span{font-size: 0.55rem;margin-right: 5px;font-weight: normal;vertical-align: baseline;}
 
 /*addAddrForm 新增地址*/
-.addAddrForm select{font-size: 0.4rem;color: #aaaaaa;}
+.addAddrForm select{font-size: 0.4rem;color: #aaaaaa;background: url(../img/arrowDown.jpg) no-repeat 100px center;
+	background-size: 8%;}
 .addAddrForm textarea{padding: 10px 0;}
 
 .addAddrForm .fullSubBtn{border-top: 15px solid #efeff4;}
 .addAddrForm .last:after{border-bottom: 0;background: none;}
 
-
-
+/*newsList新闻列表*/
+.newsList .mui-table-view-cell{border-bottom: 1px solid #ededed;}
 
 
 

@@ -53,6 +53,7 @@ a:hover{color: #333;text-decoration: none;}
 
 #checkExchange ul{margin-top: 0.6rem;}
 #checkExchange ul li p{font-size: 0.4rem;line-height: 0.6rem;color: #333;margin-bottom: 0.3rem;}
+#checkExchange .time{color: #999999;}
 .btn-status{padding: 0.05rem 0.2rem;color: #fff;font-size: 0.3rem;border-radius: 3px;}
 .isDistribution{background: #f8b268;}
 .hasSend{background: #1ab394;}
