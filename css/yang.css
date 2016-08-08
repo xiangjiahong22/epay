@@ -46,6 +46,7 @@ a:hover{color: #333;text-decoration: none;}
 #checkCount ul li p{font-size: 0.35rem;line-height: 0.5rem;color: #666;}
 .addCount{color: #79ccbf;}
 .subtractCount{color: #f38a74;}
+.subtractCount .needext{color: #999999;margin-left: 15px;font-size: 0.35rem;}
 .mui-table-view:after,.mui-table-view:before{height: 0;}
 .mui-table-view-cell:after{left: 0px;}
 #checkCount .mui-table-view-cell:last-child:after{height: 1px;}

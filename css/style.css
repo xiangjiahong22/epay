@@ -36,6 +36,7 @@ textarea::-webkit-input-placeholder {
 
 .mui-input-row label{width: 37%;}
 .mui-input-row label~input{width: 63%;}
+label{font-weight: normal}
 /*common*/
 .fullSubBtn input,.fullSubBtn a{background-color: #f38a74!important;color: #fff;border-radius: 0;height: 1.3rem;width: 100%;
 	border: 0;font-size: 0.45rem;transition:none;}
@@ -43,7 +44,7 @@ textarea::-webkit-input-placeholder {
 
 /*index 首页*/
 .serviceList{overflow: hidden;padding-top: 0.35rem}
-.serviceList li{float: left;width: 1.7rem;margin: 0 0.15rem;margin-bottom: 0.35rem;text-align: center;}
+.serviceList li{float: left;width: 18%;margin: 0 1%;margin-bottom: 0.4rem;text-align: center;}
 .serviceList li img{width: 1.5rem;height: 1.5rem;display: inline-block;}
 .serviceList li h4{font-size: 0.33rem;color: #333;margin-top: 0.15rem;}
 
@@ -186,8 +187,9 @@ textarea::-webkit-input-placeholder {
 .mallDetailsPic .mui-numbox{padding: 0 32px;width: 105px;}
 .mallDetailsPic .mui-numbox [class*=btn-numbox], .mui-numbox [class*=numbox-btn]{width: 32px;}
 
-
-
+/*integralExchange 积分兑换*/
+.addAddrBtn{margin-bottom: 15px;font-size: 0.45rem;color: #999999;}
+.addAddrBtn span{font-size: 0.55rem;margin-right: 5px;font-weight: normal;vertical-align: baseline;}
 
 
 
