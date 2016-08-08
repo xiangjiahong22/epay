@@ -8,10 +8,12 @@
 		
 		<link rel="stylesheet" href="css/mui.min.css"  />
 		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/yang.css">
 		<link rel="stylesheet" href="css/style.css" />
 		
 		<script src="js/jquery-1.11.1.js"></script>
 		<script src="js/mui.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
 		<script src="js/common.js"></script>
 	</head>
 	<body>
@@ -78,18 +80,35 @@
 				<input type="submit" value="提 交" id="subClaim"/>
 			</div>
 		</div>
+		
+		<div id="model" class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		  <div class="modal-dialog" role="document" style="width: 90%;margin: 2.5rem auto">
+		    <div class="modal-content">
+		    <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+		        <h4 class="modal-title">任务提交成功</h4>
+		      </div>
+		      <div class="modal-body" style="position: relative">
+		       <div class="insurancePic">
+		       	<img src="img/insuranceSus.jpg" alt="" />
+		       	<p class="tips">您的需求任务已经成功提交</p>
+		       </div>
+		        <a type="button" class="btn-close mui-icon mui-icon-closeempty" data-dismiss="modal" style="top: -67px;"></a>
+		        <div class="botBtns">
+		        	<a href="index.html" class="btn-back">返回首页</a>
+		        	<a href="myTask.html" class="btn-backClose">前往我的任务</a>
+		        </div>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+
 		<script>
 			mui.init();
-			document.getElementById("subClaim").addEventListener('tap', function() {
-				var btnArray = ['否', '是'];
-				mui.confirm('MUI是个好框架，确认？', 'Hello MUI', btnArray, function(e) {
-					if (e.index == 1) {
-						
-					} else {
-						
-					}
-				})
-			});
+			$('#subClaim').on('click',function(){
+		      $('#model').modal();
+		    })
 			
 		</script>
 	</body>
