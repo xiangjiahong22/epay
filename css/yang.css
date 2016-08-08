@@ -47,7 +47,7 @@ a:hover{color: #333;text-decoration: none;}
 .addCount{color: #79ccbf;}
 .subtractCount{color: #f38a74;}
 .mui-table-view:after,.mui-table-view:before{height: 0;}
-.mui-table-view-cell:after{left: 0px;}
+.mui-table-view-cell:after{left: 0px;background: #ededed;}
 #checkCount .mui-table-view-cell:last-child:after{height: 1px;}
 
 #checkExchange ul{margin-top: 0.6rem;}
@@ -104,3 +104,15 @@ a:hover{color: #333;text-decoration: none;}
 
 #taskSchedule .btn-lg-close{width: 100%;border-radius: 0;}
 #offer .alertHeader{font-size:0.5rem;line-height: 1.2rem;background: #f1f1f1;margin-bottom: 0.3rem;border-radius: 6px;}
+
+.cardList{margin-top: 0.5rem;}
+.cardList li{background: #fff;margin: 0.3rem 0;padding: 0.6rem 0.3rem;}
+.cardList li h4{font-size: 0.42rem;line-height: 0.6rem;color: #79ccbf;}
+.cardList li div span{font-size: 0.38rem;line-height: 0.6rem;}
+.cardList li p{font-size: 0.4rem;line-height: 0.6rem;color: #666;}
+.mgmt{font-size: 0.38rem;line-height: 0.7rem;padding: 0 0.4rem;background: #f38a74;color: #fff;border-radius: 5px;}
+.addCard{background: #fff;margin: 0.3rem 0;padding: 0.2rem 0.3rem;color: #999;font-size: 0.42rem;line-height: 0.42rem;position: relative}
+.addCard a{display: block;color: #999;}
+.addCard a:after{font-size: 0.8rem;color: #cbcbcb;right: 5px;}
+.addCard span{vertical-align: middle;padding-right: 0.3rem;}
+.addCard .glyphicon-plus:before{font-size: 0.8rem;line-height: 1.2rem;color: #999;}
