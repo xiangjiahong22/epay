@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="90e0f02b-ed95-4c88-9059-4a4fd9f7128f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/erweima_03.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myAcTaskSchedule.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taskInsurance.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taskMan.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/yang.css" afterPath="$PROJECT_DIR$/css/yang.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myAcTask.html" afterPath="$PROJECT_DIR$/myAcTask.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taskSchedule.html" afterPath="$PROJECT_DIR$/taskSchedule.html" />
-    </list>
+    <list default="true" id="90e0f02b-ed95-4c88-9059-4a4fd9f7128f" name="Default" comment="" />
     <ignored path="epay.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -82,8 +72,8 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.26035503">
-              <caret line="77" column="84" selection-start-line="77" selection-start-column="82" selection-end-line="77" selection-end-column="84" />
+            <state vertical-scroll-proportion="0.18224852">
+              <caret line="94" column="20" selection-start-line="94" selection-start-column="20" selection-end-line="94" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -509,8 +499,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.26035503">
-          <caret line="77" column="84" selection-start-line="77" selection-start-column="82" selection-end-line="77" selection-end-column="84" />
+        <state vertical-scroll-proportion="0.18224852">
+          <caret line="94" column="20" selection-start-line="94" selection-start-column="20" selection-end-line="94" selection-end-column="20" />
           <folding />
         </state>
       </provider>
