@@ -32,6 +32,10 @@ textarea::-webkit-input-placeholder {
 .mui-slider-indicator .mui-indicator{background: #fff;border-color: #d2d2d2;box-shadow: none;width: 8px;height: 8px;}
 .mui-slider-indicator .mui-active.mui-indicator{background: #7accbe;border-color: #7accbe;}
 
+.mui-popup{position: fixed;}
+
+.mui-input-row label{width: 37%;}
+.mui-input-row label~input{width: 63%;}
 /*common*/
 .fullSubBtn input{background-color: #f38a74!important;color: #fff;border-radius: 0;height: 1.2rem;width: 100%;
 	border: 0;font-size: 0.45rem;transition:none}
@@ -76,7 +80,7 @@ textarea::-webkit-input-placeholder {
 .claimToggleCon .lineModule .body .rightInfo{padding-left: 16.666%;margin-left: 10px;;}
 .claimToggleCon .lineModule .body .textArea{height: 2rem;padding: 0.3rem;font-size: 0.4rem;border: none;}
 .claimToggleCon .lineModule .body .posArea{background: url(../img/posBg.png) #fff no-repeat 15px 15px;background-size: 6%;text-indent: 1.5em;
-	line-height: 0.75rem;}
+	line-height: 0.75rem;height: 2.3rem;}
 .claimToggleCon .lineModule .body .telArea{height: 1.2rem;}
 .claimToggleCon .lineModule:last-child .body{padding-bottom: 0.8rem;}
 
@@ -95,32 +99,70 @@ textarea::-webkit-input-placeholder {
 .claimArticle .articleModule p{line-height: 0.6rem;text-indent: 2em;font-size: 0.38rem;}
 .claimHelpList .mui-navigate-right{display: table-cell;width: 12%;min-height: 1rem;}
 
+.insurancePic{text-align: center;}
+.insurancePic img{display: inline-block;width: 80%;}
+.insurancePic p{font-size: 0.4rem;margin-top: 6px;}
+
+#model .botBtns{overflow: hidden;}
+#model .btn-back,#model .btn-backClose{display: inline-block;width: 49%;margin-right: 1%;height: 1.2rem;border-radius: 5px;
+	color: #fff;font-size: 0.5rem;margin-top: 10px;border:none;text-align: center;line-height: 1.2rem;
+		float: left;}
+#model .btn-back{background: #79ccbf;}
+#model .btn-backClose{background: #f38a74;width: 50%;margin-right: 0;}
+#model .modal-header{background: #f1f1f1;text-align: center;border-top-left-radius: 6px;border-top-right-radius: 6px;}
 
 
+/*serviceProvide 公估服务商*/
+.serviceForm{background: none;}
+.verifyCode{display: inline-block;position: relative;width: 63%;}
+.verifyCode input{padding-left: 0;}
+.verifyCode .wechatPos{position: absolute;right: 15px;bottom: 7px;background: #79ccbf;}
 
+.serviceModule{margin-bottom: 0.5rem;background: #fff;}
+.serviceModule .mui-input-row:nth-child(3):after{background: none;}
+.serviceModule .getWechatPos{padding: 15px;background: url(../img/posBg.png) no-repeat 15px 15px;background-size: 5%;
+	}
+	
+.serviceModule .getWechatPos:-moz-placeholder { 
+   text-indent: 2em;
+}
+.serviceModule .getWechatPos::-moz-placeholder { 
+    text-indent: 2em;
+}
+.serviceModule .getWechatPos:-ms-input-placeholder {
+    text-indent: 2em;
+}
+.serviceModule .getWechatPos::-webkit-input-placeholder {
+    text-indent: 2em;
+}
 
+.verifyCodeArea{position: relative;}
+.verifyCodeArea .wechatPos{right: 15px;top: -23px;position: absolute;background: #79ccbf;}
 
+.serviceUpload{padding: 15px;}
+.serviceUpload .serviceUploadTit{font-size: 0.38rem;margin-bottom: 0.3rem;}
+.serviceUpload .mui-input-row{margin-bottom: 0.3rem;}
 
+/*serviceProviderDeal 公估协议*/
+.serviceDeal{background: #fff;font-size: 0.38rem;padding: 15px 15px 30px;color: #333333;}
+.dealModule p{margin-bottom: 15px;color: #333333;line-height: 0.7rem;font-size: 0.38rem;}
+.dealModule h2{font-size: 0.38rem;font-weight: normal;color: #1ea9b4;margin-bottom: 10px;}
+.dealModule ul li{line-height: 0.7rem;margin-bottom: 6px;font-size: 0.38rem;}
 
+/*mall 商城*/
+#mallList{padding: 0 10px 30px;overflow: hidden;}
+#mallList ul li{margin-top: 10px;}
+#mallList ul li .con{background: #fff;}
+#mallList .details{padding: 0 10px;}
+#mallList .details .name{font-size: 0.38rem;color: #333333;border-bottom: 1px solid #e1e1e1;padding: 5px 0;line-height: 0.6rem;}
+#mallList .details .integral{font-size: 0.35rem;color: #333333;padding: 7px 0;line-height: 0.6rem;}
+#mallList .details .integral .integralNum{color: #f38a74;}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#mallSearch{padding: 15px;}
+#mallSearch input{background: #fff;}
+#mallSearch .mui-placeholder{margin-top: 15px;padding: 0 15px;}
+#mallSearch:before{margin-left: 20px;margin-top: -22px;}
+#mallSearch .mui-icon-clear{top: 22px;right: 15px;}
 
 
 
