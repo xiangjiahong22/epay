@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>商品详情</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="format-detection" content="telephone=no"/>
+		
+		<link rel="stylesheet" href="css/mui.min.css"  />
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		
+		<script src="js/jquery-1.11.1.js"></script>
+		<script src="js/mui.min.js"></script>
+		<script src="js/jquery.lazyload.min.js"></script>
+		<script src="js/common.js"></script>
+	</head>
+	<body>
+		<div class="mui-content">
+			<div class="mallDetailsPic">
+				<img src="img/mallDetails.jpg" class="img-responsive"/>
+				<div class="integralNum">
+					<div class="col-xs-7 com-md-7 noPaddingR">
+						<div class="integralNeed">
+							<span class="integral">4000</span>需积分
+							<span class="myIntegral">[我的积分:<span>4000</span>]</span>
+						</div>
+						<div class="name">led充电台灯 无闪烁护眼USB调光折叠挂墙</div>
+					</div>
+					<div class="col-xs-5 col-md-5">
+						<p class="integralExchange">兑换数量</p>
+						<div class="mui-numbox" data-numbox-min='1' >
+							<button class="mui-btn mui-btn-numbox-minus" type="button">-</button>
+							<input id="test" class="mui-input-numbox" type="number" value="1" />
+							<button class="mui-btn mui-btn-numbox-plus" type="button">+</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="mallModule">
+				<h2><span>商品介绍</span></h2>
+				<div class="details">
+					<p>面料采用闪光纬编，杯面特殊织造纹理变化更加舒适、美观，凸显都市女性爱美丽气质 性感美背前扣文胸V型美背设计，后比绑带比围更性感，美背设计方便搭配各
+						类露背服饰，外露时尚美观不尴尬</p>
+					<p>采用闪光纬编，杯面特殊织造纹理变化更加舒适、美观，凸显都市女性爱美丽气质 性感美背前扣文胸V型美背设计，后比绑带比围更性感，</p>
+					<p>性感美背前扣文胸V型美背设计，后比绑带比围更性感，</p>
+				</div>
+			</div>
+			<div class="mallModule">
+				<h2><span>商品详情</span></h2>
+				<div class="details">
+					<img src="img/mallDetailPic1.jpg" alt="" class="img-responsive"/>
+					<img src="img/mallDetailPic2.jpg" alt="" class="img-responsive"/>
+					<img src="img/mallDetailPic3.jpg" alt="" class="img-responsive"/>
+				</div>
+			</div>
+			<div class="mallModule">
+				<h2><span>温馨提示</span></h2>
+				<div class="details">
+					<ul>
+						<li>本礼品由XXX提供，并由XXX负责礼品的配</li>
+						<li>送以及后续售后服务工作，礼品相关问题请咨询服务</li>
+						<li>热线 400-880-8820 （周X-周X XXXXXXX）</li>
+					</ul>
+				</div>
+			</div>
+			<div class="fullSubBtn">
+				<a  href="#">立即兑换</a>
+			</div>
+			
+
+
+		<script>
+			mui.init();
+			var slider = mui("#slider");
+			slider.slider({
+				interval: 5000
+			});
+			$("#mallList img").lazyload({effect: "fadeIn"});
+		</script>
+	</body>
+
+</html>
