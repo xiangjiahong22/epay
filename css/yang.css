@@ -106,6 +106,8 @@ a:hover{color: #333;text-decoration: none;}
 
 #taskSchedule .btn-lg-close{width: 100%;border-radius: 0;}
 #offer .alertHeader{font-size:0.5rem;line-height: 1.2rem;background: #f1f1f1;margin-bottom: 0.3rem;border-radius: 6px;}
+/*#offer ul{border-bottom: 1px solid #ededed;}*/
+#offer ul li{font-size: 0.35rem;line-height: 0.5rem;padding: 0.3rem 0;border-bottom: 1px solid #ededed;}
 
 .cardList{margin-top: 0.5rem;}
 .cardList li{background: #fff;margin: 0.3rem 0;padding: 0.6rem 0.3rem;}
@@ -128,6 +130,6 @@ a:hover{color: #333;text-decoration: none;}
 .accountHeader li img{display: block;width: 17%;margin: 0 auto 0.2rem auto;}
 .accountHeader li p{color: #fff;text-align: center;font-size: 0.35rem;line-height: 0.5rem;}
 #myAccount h3{font-size: 0.5rem;line-height: 0.7rem;padding: 0.2rem 0;}
-.accountDetail li div span{font-size: 0.5rem;line-height: 0.8rem;}
-.accountDetail li p span{font-size: 0.4rem;line-height: 0.8rem;color: #666;}
+.accountDetail li div span{font-size: 0.42rem;line-height: 0.6rem;}
+.accountDetail li p span{font-size: 0.35rem;line-height: 0.6rem;color: #666;}
 .accountDetail li p span:last-child{color: #999;}

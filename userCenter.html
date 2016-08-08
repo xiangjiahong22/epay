@@ -13,6 +13,7 @@
 
   <script src="js/jquery-1.11.1.js"></script>
   <script src="js/mui.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
   <script src="js/common.js"></script>
 </head>
 <body>
@@ -20,6 +21,22 @@
   <!--<a class="mui-pull-left">返回</a>-->
   <!--<h1 class="mui-title">个人中心</h1>-->
 <!--</header>-->
+<div id="offer" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document" style="width: 75%;margin: 2.5rem auto">
+    <div class="modal-content">
+      <div class="modal-body" style="position: relative;padding: 0;padding-bottom: 0.8rem;">
+        <div class="text-center alertHeader">已通过服务商类型</div>
+        <ul class="clear">
+          <li class="col-xs-6 text-center">公估服务商</li>
+          <li class="col-xs-6 text-center">维修服务商</li>
+          <li class="col-xs-6 text-center">公估服务商</li>
+        </ul>
+        <a type="button" class="btn-close mui-icon mui-icon-closeempty" data-dismiss="modal"></a>
+      </div>
+    </div>
+  </div>
+</div>
+
 <div class="mui-content">
   <div class="userHeader">
     <div class="userPic">
@@ -91,7 +108,7 @@
       <img src="img/server1.png" alt="">
       <span>服务商申请进度</span>
     </a>
-    <a href="" class="infoList mui-navigate-right">
+    <a href="javascript:void(0);" class="infoList mui-navigate-right">
       <img src="img/leixing.png" alt="">
       <span>已通过服务商类型</span>
     </a>
@@ -100,6 +117,10 @@
 
 </div>
 
-
+<script>
+  $('.userList a').last().on('click',function(){
+    $('#offer').modal();
+  })
+</script>
 </body>
 </html>
