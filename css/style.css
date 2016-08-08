@@ -37,9 +37,9 @@ textarea::-webkit-input-placeholder {
 .mui-input-row label{width: 37%;}
 .mui-input-row label~input{width: 63%;}
 /*common*/
-.fullSubBtn input{background-color: #f38a74!important;color: #fff;border-radius: 0;height: 1.2rem;width: 100%;
-	border: 0;font-size: 0.45rem;transition:none}
-
+.fullSubBtn input,.fullSubBtn a{background-color: #f38a74!important;color: #fff;border-radius: 0;height: 1.3rem;width: 100%;
+	border: 0;font-size: 0.45rem;transition:none;}
+.fullSubBtn a{display: inline-block;text-align: center;line-height: 1.3rem;}
 
 /*index 首页*/
 .serviceList{overflow: hidden;padding-top: 0.35rem}
@@ -163,6 +163,54 @@ textarea::-webkit-input-placeholder {
 #mallSearch .mui-placeholder{margin-top: 15px;padding: 0 15px;}
 #mallSearch:before{margin-left: 20px;margin-top: -22px;}
 #mallSearch .mui-icon-clear{top: 22px;right: 15px;}
+
+/*mallDetails 商品详情*/
+.mallDetailsPic .integralNum{background: #fff;overflow: hidden;padding: 10px 0;}
+.mallDetailsPic .integralNeed{font-size: 0.4rem;}
+.mallDetailsPic .integralNeed .integral{font-size: 0.5rem;color: #f38a74;margin-right: 2px;}
+.mallDetailsPic .integralNeed .myIntegral{font-size: 0.35rem;}
+.mallDetailsPic .integralNeed .myIntegral span{color: #f38a74;}
+
+.mallDetailsPic .integralExchange{font-size: 0.38rem;color: #333;text-align: center;margin-bottom: 8px;}
+.mallDetailsPic .mui-numbox{margin-left: 5px;}
+
+.mallModule{background: #fff;margin: 0.5rem 0;}
+.mallModule h2{font-size: 0.4rem;font-weight: normal;border-bottom: 1px solid #ededed;height: 1.2rem;line-height: 1.2rem;padding: 0 15px;}
+.mallModule h2 span{display: inline-block;border-bottom: 4px solid #79ccbf;line-height: 1.1rem;}
+.mallModule .details{padding: 0 15px;padding-bottom: 20px;}
+.mallModule .details p{margin-top: 10px;line-height: 0.55rem;font-size: 0.38rem;color: #666666;}
+.mallModule .details img{margin-top: 10px;}
+.mallModule .details ul li{font-size: 0.38rem;color: #666666;margin-top: 10px;}
+.integralNum  .name{color: #333333;font-size: 0.35rem;}
+
+.mallDetailsPic .mui-numbox{padding: 0 32px;width: 105px;}
+.mallDetailsPic .mui-numbox [class*=btn-numbox], .mui-numbox [class*=numbox-btn]{width: 32px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
