@@ -112,8 +112,21 @@ a:hover{color: #333;text-decoration: none;}
 .cardList li div span{font-size: 0.38rem;line-height: 0.6rem;}
 .cardList li p{font-size: 0.4rem;line-height: 0.6rem;color: #666;}
 .mgmt{font-size: 0.38rem;line-height: 0.7rem;padding: 0 0.4rem;background: #f38a74;color: #fff;border-radius: 5px;}
+.mgmt:hover{color: #fff;}
 .addCard{background: #fff;margin: 0.3rem 0;padding: 0.2rem 0.3rem;color: #999;font-size: 0.42rem;line-height: 0.42rem;position: relative}
 .addCard a{display: block;color: #999;}
 .addCard a:after{font-size: 0.8rem;color: #cbcbcb;right: 5px;}
 .addCard span{vertical-align: middle;padding-right: 0.3rem;}
 .addCard .glyphicon-plus:before{font-size: 0.8rem;line-height: 1.2rem;color: #999;}
+
+#addCard{margin-top: 0.6rem;}
+#addCard select{font-size: 14px;line-height: 2.5;color: #999;}
+
+.accountHeader{margin-top: 0.6rem;background:#79ccbf;color: #fff;padding: 1rem 0.5rem}
+.accountHeader li:first-child{border-right: 1px solid #fff;}
+.accountHeader li img{display: block;width: 17%;margin: 0 auto 0.2rem auto;}
+.accountHeader li p{color: #fff;text-align: center;font-size: 0.35rem;line-height: 0.5rem;}
+#myAccount h3{font-size: 0.5rem;line-height: 0.7rem;padding: 0.2rem 0;}
+.accountDetail li div span{font-size: 0.5rem;line-height: 0.8rem;}
+.accountDetail li p span{font-size: 0.4rem;line-height: 0.8rem;color: #666;}
+.accountDetail li p span:last-child{color: #999;}
