@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>上传照片</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+  <meta name="format-detection" content="telephone=no"/>
+
+  <link rel="stylesheet" href="css/mui.min.css"  />
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/yang.css">
+
+  <script src="js/jquery-1.11.1.js"></script>
+  <script src="js/mui.min.js"></script>
+  <script src="js/common.js"></script>
+</head>
+<body>
+<div class="mui-content" id="taskInsurance">
+  <form action="">
+    <div class="claimToggleCon" style="background: #fff;margin-top: 0.6rem;">
+      <div class="lineModule">
+        <div class="head">
+          <div class="col-xs-2 col-md-2 noPadding"><img src="img/claimHead1.png" class="img-responsive" alt="" /></div>
+          <div class="col-xs-10 col-md-10 tit miniPaddingL noPaddingR">上传现场照片</div>
+        </div>
+        <div class="body">
+          <!--<input accept="image/*" type="file">-->
+          <div class="rightInfo">
+            <ul class="claimUploadPic">
+              <li class="col-xs-6 col-md-6 noPaddingL minPaddingR"><img class="img-responsive" src="img/claimUploadPic1.jpg"/></li>
+              <li class="col-xs-6 col-md-6 noPaddingR minPaddingL"><img class="img-responsive" src="img/claimUploadPic2.jpg"/></li>
+            </ul>
+            <span class="uploadPic">+</span>
+          </div>
+        </div>
+      </div>
+      <div class="lineModule">
+        <div class="head">
+          <div class="col-xs-2 col-md-2 noPadding"><img src="img/claimHead2.png" class="img-responsive" alt="" /></div>
+          <div class="col-xs-10 col-md-10 tit miniPaddingL noPaddingR">填写现场情况备注</div>
+        </div>
+        <div class="body">
+          <div class="rightInfo">
+            <textarea name="text" class="textArea posArea" style="background: #f1f1f1;text-indent: 0;" placeholder="填写现场情况（字数不能超过15）"></textarea>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="fullSubBtn">
+      <input type="submit" value="确 认"/>
+    </div>
+  </form>
+</div>
+
+</body>
+
+</html>

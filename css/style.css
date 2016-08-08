@@ -1,6 +1,6 @@
 /*common style 2016-08-04*/
-html,body{font-family: "微软雅黑"!important;}
-html,body,h1,h2,h3,h4,h5,h6,div,p,img,a,form,input,textarea,ul,li,dl,dt,dd{margin: 0;padding: 0;list-style: none;font-family: "微软雅黑"!important;}
+html,body{font-family: "微软雅黑";}
+html,body,h1,h2,h3,h4,h5,h6,div,p,img,a,form,input,textarea,ul,li,dl,dt,dd{margin: 0;padding: 0;list-style: none;font-family: "微软雅黑";}
 
 .noMargin{margin: 0!important;}
 .noPadding{padding:0!important;}

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>任务进度</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+  <meta name="format-detection" content="telephone=no"/>
+
+  <link rel="stylesheet" href="css/mui.min.css"/>
+  <link rel="stylesheet" href="css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="stylesheet" href="css/yang.css">
+
+  <script src="js/jquery-1.11.1.js"></script>
+  <script src="js/mui.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/common.js"></script>
+</head>
+<body>
+<div id="model" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document" style="width: 75%;margin: 2.5rem auto">
+    <div class="modal-content">
+      <div class="modal-body" style="position: relative">
+        <div class="text-center" style="line-height: 1.8rem;">是否需要分配任务</div>
+        <div class="clear">
+          <a class="btn-lg-close pull-left text-center" id="yes" href="javascript:void(0);">是</a>
+          <a class="btn-lg-close pull-left text-center" id="no" href="javascript:void(0);">否</a>
+        </div>
+        <a type="button" class="btn-close mui-icon mui-icon-closeempty" data-dismiss="modal"></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="QR" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document" style="width: 55%;margin: 2.5rem auto">
+    <div class="modal-content">
+      <div class="modal-body" style="position: relative;padding: 15px 30px;">
+        <div class="text-center" style="font-size: 0.6rem;line-height: 1rem;">扫码分配任务</div>
+        <img class="img-responsive" src="img/erweima_03.jpg" alt="" style="margin: 0.3rem auto">
+        <a type="button" class="btn-close mui-icon mui-icon-closeempty" data-dismiss="modal"></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="offer" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document" style="width: 75%;margin: 2.5rem auto">
+    <div class="modal-content">
+      <div class="modal-body" style="position: relative;padding: 0;">
+        <div class="text-center alertHeader">报价</div>
+        <form action="">
+          <input type="text" placeholder="填写报价" style="width: 60%;display: block;margin: 0 auto;height: 1rem;">
+          <a class="btn-lg-close text-center" style="width: 60%;padding: 0.2rem 0;">确定</a>
+        </form>
+        <a type="button" class="btn-close mui-icon mui-icon-closeempty" data-dismiss="modal"></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="mui-content" id="taskSchedule">
+  <ul class="mui-table-view">
+    <li class="mui-table-view-cell">
+      <div>
+        <div class="col-xs-5 noPadding">任务标题</div>
+        <div class="col-xs-7 noPadding">
+          <p>痕迹司法鉴定</p>
+        </div>
+      </div>
+    </li>
+    <li class="mui-table-view-cell">
+      <div>
+        <div class="col-xs-5 noPadding">任务类别</div>
+        <div class="col-xs-7 noPadding">
+          <p>索赔，车险索赔</p>
+        </div>
+      </div>
+    </li>
+    <li class="mui-table-view-cell">
+      <div class="mui-navigate-right">
+        <a href="">
+          <div class="col-xs-5 noPadding">任务详细介绍</div>
+          <div class="col-xs-7 noPadding">
+            <p class="mui-ellipsis">试驾2016款现代索纳塔九gr ffgfgfgddfddfdf</p>
+          </div>
+        </a>
+      </div>
+    </li>
+    <li class="mui-table-view-cell">
+      <div class="mui-navigate-right">
+        <a href="taskMan.html">
+          <div class="col-xs-5 noPadding">任务处理人</div>
+          <div class="col-xs-7 noPadding">
+            <p>渤海评估</p>
+          </div>
+        </a>
+      </div>
+    </li>
+    <li class="mui-table-view-cell">
+      <div>
+        <div class="col-xs-5 noPadding">任务定金</div>
+        <div class="col-xs-7 noPadding">
+          <p>500.00</p>
+        </div>
+      </div>
+    </li>
+    <li class="mui-table-view-cell">
+      <div>
+        <div class="col-xs-5 noPadding">任务进度</div>
+        <div class="col-xs-7 noPadding">
+          <p>索赔，车险索赔</p>
+        </div>
+      </div>
+    </li>
+  </ul>
+  <button id="btn1" type="button" class="btn-lg-close">开始受理</button>
+  <a id="btn2" href="taskInsurance.html" type="button" class="btn-lg-close text-center" style="display: none;">正在受理</a>
+  <button id="btn3" type="button" class="btn-lg-close" style="display: none;">提交报价</button>
+  <button id="btn4" type="button" class="btn-lg-close" style="display: none;">受理完成</button>
+</div>
+
+<script>
+  $('#btn1').on('click',function(){
+    $('#model').modal();
+  })
+  $('#yes').on('click',function(){
+    $('#model').modal('hide');
+    $('#QR').modal();
+    $('#btn1').hide();
+    $('#btn2').show();
+  })
+  $('#no').on('click',function(){
+    $('#model').modal('hide');
+    $('#btn1').hide();
+    $('#btn2').show();
+  })
+  $('#btn3').on('click',function(){
+    $('#offer').modal();
+  })
+
+</script>
+
+</body>
+</html>
