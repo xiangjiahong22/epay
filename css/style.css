@@ -37,6 +37,7 @@ textarea::-webkit-input-placeholder {
 .serviceForm .mui-input-row label{width: 37%;}
 .serviceForm .mui-input-row label~input{width: 63%;}
 label{font-weight: normal}
+.mui-input-group{overflow: hidden;}
 /*common*/
 .fullSubBtn input,.fullSubBtn a{background-color: #f38a74!important;color: #fff;border-radius: 0;height: 1.3rem;width: 100%;
 	border: 0;font-size: 0.45rem;transition:none;}
@@ -191,10 +192,12 @@ label{font-weight: normal}
 .addAddrBtn{margin-bottom: 15px;font-size: 0.45rem;color: #999999;}
 .addAddrBtn span{font-size: 0.55rem;margin-right: 5px;font-weight: normal;vertical-align: baseline;}
 
+/*addAddrForm 新增地址*/
+.addAddrForm select{font-size: 0.4rem;color: #aaaaaa;}
+.addAddrForm textarea{padding: 10px 0;}
 
-
-
-
+.addAddrForm .fullSubBtn{border-top: 15px solid #efeff4;}
+.addAddrForm .last:after{border-bottom: 0;background: none;}
 
 
 
