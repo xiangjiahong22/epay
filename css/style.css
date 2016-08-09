@@ -192,7 +192,7 @@ label{font-weight: normal}
 .addAddrBtn{margin-bottom: 15px;font-size: 0.45rem;color: #999999;}
 .addAddrBtn span{font-size: 0.55rem;margin-right: 5px;font-weight: normal;vertical-align: baseline;}
 
-.currentPos{background: #fff;padding: 10px 15px}
+.currentPos{background: #fff;}
 .currentPos .name{color: #333;font-size: 0.4rem;margin-bottom: 5px;}
 .currentPos .position{font-size: 0.35rem;}
 
