@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>评论</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+  <meta name="format-detection" content="telephone=no"/>
+
+  <link rel="stylesheet" href="css/mui.min.css"/>
+  <link rel="stylesheet" href="css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="stylesheet" href="css/yang.css">
+
+  <script src="js/jquery-1.11.1.js"></script>
+  <script src="js/mui.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/common.js"></script>
+</head>
+<body>
+<div class="mui-content" id="comment">
+  <ul class="mui-table-view">
+    <li class="mui-table-view-cell">
+      <span class="col-xs-4">任务标题</span>
+      <p class="col-xs-8">汽车汽车汽车汽车企鹅车</p>
+    </li>
+    <li class="mui-table-view-cell">
+      <span class="col-xs-4">任务处理人</span>
+      <p class="col-xs-8">设计之家</p>
+    </li>
+  </ul>
+
+  <ul style="margin-top: 0.6rem;" class="mui-table-view">
+    <li class="mui-table-view-cell">
+      <span class="col-xs-3">评分</span>
+      <div class="col-xs-9">
+        <a href="">
+          <span class="mui-icon mui-icon-star-filled"></span>
+        </a>
+        <a href="">
+          <span class="mui-icon mui-icon-star-filled"></span>
+        </a>
+        <a href="">
+          <span class="mui-icon mui-icon-star-filled"></span>
+        </a>
+        <a href="">
+          <span class="mui-icon mui-icon-star-filled"></span>
+        </a>
+        <a href="">
+          <span class="mui-icon mui-icon-star-filled"></span>
+        </a>
+      </div>
+    </li>
+    <li class="mui-table-view-cell">
+      <form action="">
+        <input class="hide" type="text">
+        <textarea name="" id="" rows="5" style="width: 100%;border:0;" placeholder="请输入评价内容"></textarea>
+      </form>
+    </li>
+  </ul>
+
+  <button type="button" class="btn-lg-close" style="width: 95%;">提交评论</button>
+</div>
+
+
+<script>
+  $(function(){
+    $('#comment a').on('click',function(){
+      var index=$(this).index();
+      $('input.hide').val(index+1);
+      $.each($('#comment a'),function(key,el){
+        $(el).removeClass('active');
+        if(key<=index){
+          $(el).addClass('active');
+        }
+      })
+      return false;
+    })
+  })
+</script>
+</body>
+</html>
