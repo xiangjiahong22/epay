@@ -18,7 +18,7 @@
 	</head>
 	<body>
 		<div class="mui-content">
-			<form action="" id="claimForm" method="get">
+			<form action="" id="claimForm">
 				<div class="claimHeader">
 					<a href="insuranceClaim.html" class="active">保险索赔</a>
 					<a href="insuranceClaimHelp.html">保险索赔帮助</a>
@@ -82,7 +82,7 @@
 			</form>
 		</div>
 		
-		<div id="model" class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div id="model" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 		  <div class="modal-dialog" role="document" style="width: 90%;margin: 2.5rem auto">
 		    <div class="modal-content">
 		    <div class="modal-header">
@@ -103,19 +103,39 @@
 		    </div>
 		  </div>
 		</div>
+		
+		<div id="errorModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		  <div class="modal-dialog" role="document" style="width: 90%;margin: 2.5rem auto">
+		    <div class="modal-content">
+		    <div class="modal-header">
+		    	<h4 class="modal-title">错误信息提示</h4>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+		      </div>
+		      <div class="modal-body" style="position: relative">
+		       <div class="insurancePic">
+		       	<p class="tips">表单比较失败，请重新检查并比较</p>
+		       </div>
+		        <a type="button" class="btn-close mui-icon mui-icon-closeempty" data-dismiss="modal" style="top: -67px;"></a>
+		        <div class="botBtns">
+		        	<a type="button" class="btn-backClose" data-dismiss="modal">关闭</a>
+		        </div>
+		      </div>
+		    </div>
+		  </div>
+		</div>
 
 
 		<script>
 			mui.init();
+			$('#errorModal').modal();
+			
 			$('#subClaim').on('click',function(){
-		      /*$('#model').modal();*/
 		     $.ajax({
 		     	type: "GET",
-	             url: "www.uu139.com",
-	             data:$('').serialize(),
+	             url: "",
+	             data:$('#claimForm').serialize(),
 	             success: function(data){
-	             	
-	             	$('#model').modal();
+	             	/*$('#model').modal();*/
 	             }
 			     	
 			     })
