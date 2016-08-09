@@ -18,67 +18,68 @@
 	</head>
 	<body>
 		<div class="mui-content">
-			<div class="claimHeader">
-				<a href="insuranceClaim.html" class="active">保险索赔</a>
-				<a href="insuranceClaimHelp.html">保险索赔帮助</a>
-			</div>
-			<div class="claimToggleCon">
-				<div class="lineModule">
-					<div class="head">
-						<div class="col-xs-2 col-md-2 noPadding"><img src="img/claimHead1.png" class="img-responsive" alt="" /></div>
-						<div class="col-xs-10 col-md-10 tit miniPaddingL noPaddingR">填写任务需求</div>
-					</div>
-					<div class="body">
-						<div class="rightInfo"><textarea name="" class="textArea" placeholder="填写任务需求（字数不能超过15）"></textarea></div>
-					</div>
+			<form action="" id="claimForm" method="get">
+				<div class="claimHeader">
+					<a href="insuranceClaim.html" class="active">保险索赔</a>
+					<a href="insuranceClaimHelp.html">保险索赔帮助</a>
 				</div>
-				<div class="lineModule">
-					<div class="head">
-						<div class="col-xs-2 col-md-2 noPadding"><img src="img/claimHead2.png" class="img-responsive" alt="" /></div>
-						<div class="col-xs-10 col-md-10 tit miniPaddingL noPaddingR">上传现场照片</div>
+				<div class="claimToggleCon">
+					<div class="lineModule">
+						<div class="head">
+							<div class="col-xs-2 col-md-2 noPadding"><img src="img/claimHead1.png" class="img-responsive" alt="" /></div>
+							<div class="col-xs-10 col-md-10 tit miniPaddingL noPaddingR">填写任务需求</div>
+						</div>
+						<div class="body">
+							<div class="rightInfo"><textarea name="" class="textArea" placeholder="填写任务需求（字数不能超过15）" name="claimProject"></textarea></div>
+						</div>
 					</div>
-					<div class="body">
-						<!--<input accept="image/*" type="file">-->
-						<div class="rightInfo">
-							<ul class="claimUploadPic">
-								<li class="col-xs-6 col-md-6 noPaddingL minPaddingR"><img class="img-responsive" src="img/claimUploadPic1.jpg"/></li>
-								<li class="col-xs-6 col-md-6 noPaddingR minPaddingL"><img class="img-responsive" src="img/claimUploadPic2.jpg"/></li>
-							</ul>
-							<span class="uploadPic">+</span>
+					<div class="lineModule">
+						<div class="head">
+							<div class="col-xs-2 col-md-2 noPadding"><img src="img/claimHead2.png" class="img-responsive" alt="" /></div>
+							<div class="col-xs-10 col-md-10 tit miniPaddingL noPaddingR">上传现场照片</div>
+						</div>
+						<div class="body">
+							<div class="rightInfo">
+								<ul class="claimUploadPic">
+									<li class="col-xs-6 col-md-6 noPaddingL minPaddingR"><img class="img-responsive" src="img/claimUploadPic1.jpg"/></li>
+									<li class="col-xs-6 col-md-6 noPaddingR minPaddingL"><img class="img-responsive" src="img/claimUploadPic2.jpg"/></li>
+								</ul>
+								<span class="uploadPic">+</span>
+							</div>
+						</div>
+					</div>
+					<div class="lineModule">
+						<div class="head">
+							<div class="col-xs-2 col-md-2 noPadding"><img src="img/claimHead3.png" class="img-responsive" alt="" /></div>
+							<div class="col-xs-10 col-md-10 tit miniPaddingL noPaddingR">上传服务商照片</div>
+						</div>
+						<div class="body">
+								<div class="rightInfo"><span class="uploadPic">+</span></div>
+						</div>
+					</div>
+					<div class="lineModule">
+						<div class="head">
+							<div class="col-xs-2 col-md-2 noPadding"><img src="img/claimHead4.png" class="img-responsive" alt="" /></div>
+							<div class="col-xs-10 col-md-10 tit miniPaddingL noPaddingR">填写手机号</div>
+						</div>
+						<div class="body">
+								<div class="rightInfo"><input type="tel"  name="claimTel" class="textArea telArea" placeholder="填写手机号"/></div>
+						</div>
+					</div>
+					<div class="lineModule">
+						<div class="head">
+							<div class="col-xs-2 col-md-2 noPadding"><img src="img/claimHead4.png" class="img-responsive" alt="" /></div>
+							<div class="col-xs-10 col-md-10 tit miniPaddingL noPaddingR">位置信息<a href="javascript:void(0)" class="wechatPos pull-right">微信定位</a></div>
+						</div>
+						<div class="body">
+								<div class="rightInfo"><textarea name="claimPosition" class="textArea posArea">北京市海淀区丹棱街3号中国电子大厦B座10层</textarea></div>
 						</div>
 					</div>
 				</div>
-				<div class="lineModule">
-					<div class="head">
-						<div class="col-xs-2 col-md-2 noPadding"><img src="img/claimHead3.png" class="img-responsive" alt="" /></div>
-						<div class="col-xs-10 col-md-10 tit miniPaddingL noPaddingR">上传服务商照片</div>
-					</div>
-					<div class="body">
-							<div class="rightInfo"><span class="uploadPic">+</span></div>
-					</div>
+				<div class="fullSubBtn">
+					<input type="submit" value="提 交" id="subClaim"/>
 				</div>
-				<div class="lineModule">
-					<div class="head">
-						<div class="col-xs-2 col-md-2 noPadding"><img src="img/claimHead4.png" class="img-responsive" alt="" /></div>
-						<div class="col-xs-10 col-md-10 tit miniPaddingL noPaddingR">填写手机号</div>
-					</div>
-					<div class="body">
-							<div class="rightInfo"><input type="tel"  name="" class="textArea telArea" placeholder="填写手机号"/></div>
-					</div>
-				</div>
-				<div class="lineModule">
-					<div class="head">
-						<div class="col-xs-2 col-md-2 noPadding"><img src="img/claimHead4.png" class="img-responsive" alt="" /></div>
-						<div class="col-xs-10 col-md-10 tit miniPaddingL noPaddingR">位置信息<a href="javascript:void(0)" class="wechatPos pull-right">微信定位</a></div>
-					</div>
-					<div class="body">
-							<div class="rightInfo"><textarea name="" class="textArea posArea">北京市海淀区丹棱街3号中国电子大厦B座10层</textarea></div>
-					</div>
-				</div>
-			</div>
-			<div class="fullSubBtn">
-				<input type="submit" value="提 交" id="subClaim"/>
-			</div>
+			</form>
 		</div>
 		
 		<div id="model" class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -107,7 +108,18 @@
 		<script>
 			mui.init();
 			$('#subClaim').on('click',function(){
-		      $('#model').modal();
+		      /*$('#model').modal();*/
+		     $.ajax({
+		     	type: "GET",
+	             url: "www.uu139.com",
+	             data:$('').serialize(),
+	             dataType: "json",
+	             success: function(data){
+	             	
+	             }
+			     	
+			     })
+		     $('#claimForm').submit();
 		    })
 			
 		</script>
