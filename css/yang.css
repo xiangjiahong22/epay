@@ -133,3 +133,10 @@ a:hover{color: #333;text-decoration: none;}
 .accountDetail li div span{font-size: 0.42rem;line-height: 0.6rem;}
 .accountDetail li p span{font-size: 0.35rem;line-height: 0.6rem;color: #666;}
 .accountDetail li p span:last-child{color: #999;}
+
+#comment ul li{font-size: 0.35rem;line-height: 0.9rem;}
+#comment ul li span,#comment ul li div,#comment ul li p{padding: 0;}
+#comment ul li p{color: #666;}
+#comment ul li textarea{line-height: 0.5rem;}
+#comment ul li div a{color: #ccc;margin-right: 3px;}
+#comment ul li div a.active{color: #f38a74}
