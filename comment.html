@@ -64,7 +64,7 @@
 
 <script>
   $(function(){
-    $('#comment a').on('click',function(){
+    $('#comment a').on('touchstart',function(){
       var index=$(this).index();
       $('input.hide').val(index+1);
       $.each($('#comment a'),function(key,el){
