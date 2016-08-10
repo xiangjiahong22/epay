@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="90e0f02b-ed95-4c88-9059-4a4fd9f7128f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/newsDetail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comment.html" afterPath="$PROJECT_DIR$/comment.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/yang.css" afterPath="$PROJECT_DIR$/css/yang.css" />
     </list>
     <ignored path="epay.iws" />
@@ -59,8 +56,8 @@
       <file leaf-file-name="yang.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/yang.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.791716">
-              <caret line="144" column="53" selection-start-line="144" selection-start-column="53" selection-end-line="144" selection-end-column="53" />
+            <state vertical-scroll-proportion="0.7656805">
+              <caret line="143" column="33" selection-start-line="143" selection-start-column="33" selection-end-line="143" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -103,8 +100,8 @@
       <file leaf-file-name="newsList.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/newsList.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.142857">
-              <caret line="4" column="2" selection-start-line="4" selection-start-column="2" selection-end-line="16" selection-end-column="38" />
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="2" selection-start-line="4" selection-start-column="2" selection-end-line="16" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -790,8 +787,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/newsList.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.142857">
-          <caret line="4" column="2" selection-start-line="4" selection-start-column="2" selection-end-line="16" selection-end-column="38" />
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="2" selection-start-line="4" selection-start-column="2" selection-end-line="16" selection-end-column="38" />
           <folding />
         </state>
       </provider>
@@ -818,8 +815,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/yang.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.791716">
-          <caret line="144" column="53" selection-start-line="144" selection-start-column="53" selection-end-line="144" selection-end-column="53" />
+        <state vertical-scroll-proportion="0.7656805">
+          <caret line="143" column="33" selection-start-line="143" selection-start-column="33" selection-end-line="143" selection-end-column="33" />
           <folding />
         </state>
       </provider>

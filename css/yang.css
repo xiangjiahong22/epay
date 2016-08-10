@@ -141,7 +141,7 @@ a:hover{color: #333;text-decoration: none;}
 #comment ul li div a{color: #ccc;margin-right: 3px;}
 #comment ul li div a.active{color: #f38a74}
 
-.newsDetail>div{background: #fff;margin-top: 0.6rem;padding: 0.5rem 0;border-bottom: 1px solid #ededed;}
+.newsDetail>div{background: #fff;padding: 0.5rem 0;border-bottom: 1px solid #ededed;}
 .newsDetail h3{font-size: 0.5rem;line-height: 0.7rem;}
 .newsDetail h4,.newsDetail p{font-size: 0.4rem;line-height: 0.6rem;}
 .newsDetail h4{color: #666;}
