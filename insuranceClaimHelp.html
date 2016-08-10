@@ -1,507 +1,355 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="UTF-8">
-		<title>保险索赔帮助</title>
-		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
-		<meta name="format-detection" content="telephone=no"/>
-		
-		<link rel="stylesheet" href="css/mui.min.css"  />
-		<link rel="stylesheet" href="css/bootstrap.min.css" />
-		<link rel="stylesheet" href="css/style.css" />
-		<style>
-			.mui-views,
-			.mui-view,
-			.mui-pages,
-			.mui-page,
-			.mui-page-content {
-				position: absolute;
-				left: 0;
-				right: 0;
-				top: 0;
-				bottom: 0;
-				width: 100%;
-				height: 100%;
-				background-color: #efeff4;
-			}
-			.mui-pages {
-				top: 46px;
-				height: auto;
-			}
-			.mui-scroll-wrapper,
-			.mui-scroll {
-				background-color: #efeff4;
-			}
-			.mui-page.mui-transitioning {
-				-webkit-transition: -webkit-transform 300ms ease;
-				transition: transform 300ms ease;
-			}
-			.mui-page-left {
-				-webkit-transform: translate3d(0, 0, 0);
-				transform: translate3d(0, 0, 0);
-			}
-			.mui-ios .mui-page-left {
-				-webkit-transform: translate3d(-20%, 0, 0);
-				transform: translate3d(-20%, 0, 0);
-			}
-			.mui-navbar {
-				position: fixed;
-				right: 0;
-				left: 0;
-				z-index: 10;
-				height: 44px;
-				background-color: #f7f7f8;
-			}
-			.mui-navbar .mui-bar {
-				position: absolute;
-				background: transparent;
-				text-align: center;
-			}
-			.mui-android .mui-navbar-inner.mui-navbar-left {
-				opacity: 0;
-			}
-			.mui-ios .mui-navbar-left .mui-left,
-			.mui-ios .mui-navbar-left .mui-center,
-			.mui-ios .mui-navbar-left .mui-right {
-				opacity: 0;
-			}
-			.mui-navbar .mui-btn-nav {
-				-webkit-transition: none;
-				transition: none;
-				-webkit-transition-duration: .0s;
-				transition-duration: .0s;
-			}
-			.mui-navbar .mui-bar .mui-title {
-				display: inline-block;
-				width: auto;
-			}
-			.mui-page-shadow {
-				position: absolute;
-				right: 100%;
-				top: 0;
-				width: 16px;
-				height: 100%;
-				z-index: -1;
-				content: '';
-			}
-			.mui-page-shadow {
-				background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, .01) 50%, rgba(0, 0, 0, .2) 100%);
-				background: linear-gradient(to right, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, .01) 50%, rgba(0, 0, 0, .2) 100%);
-			}
-			.mui-navbar-inner.mui-transitioning,
-			.mui-navbar-inner .mui-transitioning {
-				-webkit-transition: opacity 300ms ease, -webkit-transform 300ms ease;
-				transition: opacity 300ms ease, transform 300ms ease;
-			}
-			.mui-page {
-				display: none;
-			}
-			.mui-pages .mui-page {
-				display: block;
-			}
-			.mui-page .mui-table-view:first-child {
-				margin-top: 15px;
-			}
-			.mui-page .mui-table-view:last-child {
-				margin-bottom: 30px;
-			}
-			.mui-table-view {
-				margin-top: 20px;
-			}
-			
-			.mui-table-view span.mui-pull-right {
-				color: #999;
-			}
-			.mui-table-view-divider {
-				background-color: #efeff4;
-				font-size: 14px;
-			}
-			.mui-table-view-divider:before,
-			.mui-table-view-divider:after {
-				height: 0;
-			}
-			.head {
-				height: 40px;
-			}
-			#head {
-				line-height: 40px;
-			}
-			.head-img {
-				width: 40px;
-				height: 40px;
-			}
-			#head-img1 {
-				position: absolute;
-				bottom: 10px;
-				right: 40px;
-				width: 40px;
-				height: 40px;
-			}
-			.update {
-				font-style: normal;
-				color: #999999;
-				margin-right: -25px;
-				font-size: 15px
-			}
-			.mui-fullscreen {
-				position: fixed;
-				z-index: 20;
-				background-color: #000;
-			}
-			.mui-ios .mui-navbar .mui-bar .mui-title {
-				position: static;
-			}
-		</style>
-		
-		<script src="js/mui.min.js"></script>
-		<script src="js/mui.view.js "></script>
-		<script src="js/jquery-1.11.1.js"></script>
-		<script src="js/common.js"></script>
-		
-	</head>
-	<body class="mui-fullscreen">
-		<!--<div class="mui-content">
-			<div class="claimHeader">
-				<a href="insuranceClaim.html">保险索赔</a>
-				<a href="insuranceClaimHelp.html" class="active">保险索赔帮助</a>
-			</div>
-			<div id="setting" class="mui-page" >
-				
-				<ul class="mui-table-view mui-table-view-striped mui-table-view-condensed claimHelpList">
-			        <li class="mui-table-view-cell">
-			            <a href="#about">
-			            	<div class="mui-table">
-				                <div class="mui-table-cell mui-col-xs-10">
-				                    <h4 class="mui-ellipsis-2">公估帮助</h4>
-				                    <h5>2016年上半年DS品牌累计销量8715辆，毫无疑问，这是处于负增长的状态，这样一种销量形势...</h5>
-				                </div>
-				                <a class="mui-navigate-right"></a>
-				            </div>
-			            </a>
-			        </li>
-			        <li class="mui-table-view-cell">
-			            <div class="mui-table">
-			                <div class="mui-table-cell mui-col-xs-10">
-			                    <h4 class="mui-ellipsis-2">公估帮助</h4>
-			                    <h5>2016年上半年DS品牌累计销量8715辆，毫无疑问，这是处于负增长的状态，这样一种销量形势...</h5>
-			                </div>
-			                <a class="mui-navigate-right"></a>
-			            </div>
-			        </li>
-			        <li class="mui-table-view-cell">
-			            <div class="mui-table">
-			                <div class="mui-table-cell mui-col-xs-10">
-			                    <h4 class="mui-ellipsis-2">公估帮助</h4>
-			                    <h5>2010年DS复兴，当初也只是采用DS名称的雪铁龙旗下一个定位精品化的大车系家族</h5>
-			                </div>
-			                <a class="mui-navigate-right"></a>
-			        </li>
-			        <li class="mui-table-view-cell">
-			            <div class="mui-table">
-			                <div class="mui-table-cell mui-col-xs-10">
-			                    <h4 class="mui-ellipsis-2">公估帮助</h4>
-			                    <h5>2015年年底宣布说要作为独立的高端品牌发展，以球叔的观点看，这一道路必然也将充满坎坷</h5>
-			                </div>
-			                <a class="mui-navigate-right"></a>
-			            </div>
-			        </li>
-			        <li class="mui-table-view-cell">
-			            <div class="mui-table">
-			                <div class="mui-table-cell mui-col-xs-10">
-			                    <h4 class="mui-ellipsis-2">公估帮助</h4>
-			                    <h5>后来者DS和林肯都总结了经验，走亲民路线，但与林肯深厚的历史和加长婚车背景</h5>
-			                </div>
-			                <a class="mui-navigate-right"></a>
-			            </div>
-			        </li>
-			    </ul>
-			</div>
-			
-		</div>-->
-		
-		<!--页面主结构开始-->
-		<div id="app" class="mui-views">
-			<div class="mui-view">
-				<div class="mui-navbar">
-				</div>
-				<div class="mui-pages">
-				</div>
-			</div>
-		</div>
-		<!--页面主结构结束-->
-		<!--单页面开始-->
-		<div id="setting" class="mui-page">
-			<!--页面标题栏开始-->
-			<div class="mui-navbar-inner mui-bar mui-bar-nav">
-				<button type="button" class="mui-left mui-action-back mui-btn  mui-btn-link mui-btn-nav mui-pull-left">
-					<span class="mui-icon mui-icon-left-nav"></span>
-				</button>
-				<h1 class="mui-center mui-title">保险索赔</h1>
-			</div>
-			<!--页面标题栏结束-->
-			<!--页面主内容区开始-->
-			<div class="mui-page-content">
-				<div class="mui-scroll-wrapper">
-					<div class="claimHeader">
-						<a href="javascript:history.go(-1)">保险索赔</a>
-						<a href="insuranceClaimHelp.html" class="active">保险索赔帮助</a>
-					</div>
-					<div class="mui-scroll">
-						<ul class="mui-table-view mui-table-view-striped mui-table-view-condensed claimHelpList">
-					        <li class="mui-table-view-cell">
-				            	<div class="mui-table">
-					                <div class="mui-table-cell mui-col-xs-10">
-					                	<a href="#help1">
-						                    <h4 class="mui-ellipsis-2">公估帮助</h4>
-						                    <h5>《车鲜知》是个什么鬼？您可以把它当做一个研究车界动向的烧脑小组。...</h5>
-						                    <div class="articleInfo hidden">dsjlfdlg</div>
-					                     </a>
-					                </div>
-					                <a class="mui-navigate-right" href="#help1"></a>
-					            </div>
-					        </li>
-					        <li class="mui-table-view-cell">
-				            	<div class="mui-table">
-					                <div class="mui-table-cell mui-col-xs-10">
-					                	<a href="#help2">
-						                    <h4 class="mui-ellipsis-2">公估帮助</h4>
-						                    <h5>《车鲜知》是个什么鬼？您可以把它当做一个研究车界动向的烧脑小组。...</h5>
-						                    <div class="articleInfo hidden">dsjlfdlg</div>
-					                     </a>
-					                </div>
-					                <a class="mui-navigate-right" href="#help2"></a>
-					            </div>
-					        </li>
-					        <li class="mui-table-view-cell">
-				            	<div class="mui-table">
-					                <div class="mui-table-cell mui-col-xs-10">
-					                	<a href="#help3">
-						                    <h4 class="mui-ellipsis-2">公估帮助</h4>
-						                    <h5>《车鲜知》是个什么鬼？您可以把它当做一个研究车界动向的烧脑小组。...</h5>
-						                    <div class="articleInfo hidden">dsjlfdlg</div>
-					                     </a>
-					                </div>
-					                <a class="mui-navigate-right" href="#help3"></a>
-					            </div>
-					        </li>
-					         <li class="mui-table-view-cell">
-				            	<div class="mui-table">
-					                <div class="mui-table-cell mui-col-xs-10">
-					                	<a href="#help4">
-						                    <h4 class="mui-ellipsis-2">公估帮助</h4>
-						                    <h5>《车鲜知》是个什么鬼？您可以把它当做一个研究车界动向的烧脑小组。...</h5>
-						                    <div class="articleInfo hidden">dsjlfdlg</div>
-					                     </a>
-					                </div>
-					                <a class="mui-navigate-right" href="#help4"></a>
-					            </div>
-					        </li>
-					         <li class="mui-table-view-cell">
-				            	<div class="mui-table">
-					                <div class="mui-table-cell mui-col-xs-10">
-					                	<a href="#help5">
-						                    <h4 class="mui-ellipsis-2">公估帮助</h4>
-						                    <h5>《车鲜知》是个什么鬼？您可以把它当做一个研究车界动向的烧脑小组。...</h5>
-						                    <div class="articleInfo hidden">dsjlfdlg</div>
-					                     </a>
-					                </div>
-					                <a class="mui-navigate-right" href="#help5"></a>
-					            </div>
-					        </li>
-					       
-					       
-					    </ul>
-					</div>
-				</div>
-			</div>
-			<!--页面主内容区结束-->
-		</div>
-		
-		<div id="help1" class="mui-page">
-			<div class="mui-navbar-inner mui-bar mui-bar-nav">
-				<button type="button" class="mui-left mui-action-back mui-btn  mui-btn-link mui-btn-nav mui-pull-left">
-					<span class="mui-icon mui-icon-left-nav"></span>
-				</button>
-				<h1 class="mui-center mui-title">保险索赔</h1>
-			</div>
-			<div class="mui-page-content">
-				<div class="mui-scroll-wrapper">
-					<div class="claimHeader">
-						<a href="insuranceClaim.html">保险索赔</a>
-						<a href="insuranceClaimHelp.html" class="active">保险索赔帮助</a>
-					</div>
-					<div class="mui-scroll">
-						<div class="claimArticle">
-							<h2>公估帮助</h2>
-							<div class="articleModule">
-								<p>《车鲜知》是个什么鬼？您可以把它当做一个研究车界动向的烧脑小组。</p>
-								<p>《车鲜知》的任务是为大家带来最“新鲜”的新车信息预测，以及靠谱儿的车圈儿动态分析，让每一位朋友都能成为车坛中的“先知”。在这里您将看到关于新车定价预测、热辣观点PK、车企动向揭秘等等经过我们烧脑后有理有据的内容。</p>
-							</div>
-							<div class="articleModule">
-								<p>作为汽车的发明者，奔驰每次换代车型的推出都可称得上是引领市场的变革者，即将在8月22日上市的国产新一代E级长
-									轴距版车型同样如此。其与迈巴赫S级相同的车身加长结构以及众多在S级车型中都不曾见到的高科技配置，使本代车
-									型看起来更加的非比寻常。目前国产新一代E级长轴距版的官方指导售价仍保持着神秘，那么我们通过《车鲜知》的
-									分析给大家一个理性的售价区间，看看此前非官方渠道的预售价格是否合理，以下的正文将为大家揭晓国产新E级全
-									系E 180 L至E 400 L车型的定价区间。</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div id="help2" class="mui-page">
-			<div class="mui-navbar-inner mui-bar mui-bar-nav">
-				<button type="button" class="mui-left mui-action-back mui-btn  mui-btn-link mui-btn-nav mui-pull-left">
-					<span class="mui-icon mui-icon-left-nav"></span>
-				</button>
-				<h1 class="mui-center mui-title">保险索赔</h1>
-			</div>
-			<div class="mui-page-content">
-				<div class="mui-scroll-wrapper">
-					<div class="claimHeader">
-						<a href="insuranceClaim.html">保险索赔</a>
-						<a href="insuranceClaimHelp.html" class="active">保险索赔帮助</a>
-					</div>
-					<div class="mui-scroll">
-						<div class="claimArticle">
-							<h2>公估帮助</h2>
-							<div class="articleModule">
-								<p>《车鲜知》是个什么鬼？您可以把它当做一个研究车界动向的烧脑小组。</p>
-								<p>《车鲜知》的任务是为大家带来最“新鲜”的新车信息预测，以及靠谱儿的车圈儿动态分析，让每一位朋友都能成为车坛中的“先知”。在这里您将看到关于新车定价预测、热辣观点PK、车企动向揭秘等等经过我们烧脑后有理有据的内容。</p>
-							</div>
-							<div class="articleModule">
-								<p>作为汽车的发明者，奔驰每次换代车型的推出都可称得上是引领市场的变革者，即将在8月22日上市的国产新一代E级长
-									轴距版车型同样如此。其与迈巴赫S级相同的车身加长结构以及众多在S级车型中都不曾见到的高科技配置，使本代车
-									型看起来更加的非比寻常。目前国产新一代E级长轴距版的官方指导售价仍保持着神秘，那么我们通过《车鲜知》的
-									分析给大家一个理性的售价区间，看看此前非官方渠道的预售价格是否合理，以下的正文将为大家揭晓国产新E级全
-									系E 180 L至E 400 L车型的定价区间。</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div id="help3" class="mui-page">
-			<div class="mui-navbar-inner mui-bar mui-bar-nav">
-				<button type="button" class="mui-left mui-action-back mui-btn  mui-btn-link mui-btn-nav mui-pull-left">
-					<span class="mui-icon mui-icon-left-nav"></span>
-				</button>
-				<h1 class="mui-center mui-title">保险索赔</h1>
-			</div>
-			<div class="mui-page-content">
-				<div class="mui-scroll-wrapper">
-					<div class="claimHeader">
-						<a href="insuranceClaim.html">保险索赔</a>
-						<a href="insuranceClaimHelp.html" class="active">保险索赔帮助</a>
-					</div>
-					<div class="mui-scroll">
-						<div class="claimArticle">
-							<h2>公估帮助</h2>
-							<div class="articleModule">
-								<p>《车鲜知》是个什么鬼？您可以把它当做一个研究车界动向的烧脑小组。</p>
-								<p>《车鲜知》的任务是为大家带来最“新鲜”的新车信息预测，以及靠谱儿的车圈儿动态分析，让每一位朋友都能成为车坛中的“先知”。在这里您将看到关于新车定价预测、热辣观点PK、车企动向揭秘等等经过我们烧脑后有理有据的内容。</p>
-							</div>
-							<div class="articleModule">
-								<p>作为汽车的发明者，奔驰每次换代车型的推出都可称得上是引领市场的变革者，即将在8月22日上市的国产新一代E级长
-									轴距版车型同样如此。其与迈巴赫S级相同的车身加长结构以及众多在S级车型中都不曾见到的高科技配置，使本代车
-									型看起来更加的非比寻常。目前国产新一代E级长轴距版的官方指导售价仍保持着神秘，那么我们通过《车鲜知》的
-									分析给大家一个理性的售价区间，看看此前非官方渠道的预售价格是否合理，以下的正文将为大家揭晓国产新E级全
-									系E 180 L至E 400 L车型的定价区间。</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div id="help4" class="mui-page">
-			<div class="mui-navbar-inner mui-bar mui-bar-nav">
-				<button type="button" class="mui-left mui-action-back mui-btn  mui-btn-link mui-btn-nav mui-pull-left">
-					<span class="mui-icon mui-icon-left-nav"></span>
-				</button>
-				<h1 class="mui-center mui-title">保险索赔</h1>
-			</div>
-			<div class="mui-page-content">
-				<div class="mui-scroll-wrapper">
-					<div class="claimHeader">
-						<a href="insuranceClaim.html">保险索赔</a>
-						<a href="insuranceClaimHelp.html" class="active">保险索赔帮助</a>
-					</div>
-					<div class="mui-scroll">
-						<div class="claimArticle">
-							<h2>公估帮助</h2>
-							<div class="articleModule">
-								<p>《车鲜知》是个什么鬼？您可以把它当做一个研究车界动向的烧脑小组。</p>
-								<p>《车鲜知》的任务是为大家带来最“新鲜”的新车信息预测，以及靠谱儿的车圈儿动态分析，让每一位朋友都能成为车坛中的“先知”。在这里您将看到关于新车定价预测、热辣观点PK、车企动向揭秘等等经过我们烧脑后有理有据的内容。</p>
-							</div>
-							<div class="articleModule">
-								<p>作为汽车的发明者，奔驰每次换代车型的推出都可称得上是引领市场的变革者，即将在8月22日上市的国产新一代E级长
-									轴距版车型同样如此。其与迈巴赫S级相同的车身加长结构以及众多在S级车型中都不曾见到的高科技配置，使本代车
-									型看起来更加的非比寻常。目前国产新一代E级长轴距版的官方指导售价仍保持着神秘，那么我们通过《车鲜知》的
-									分析给大家一个理性的售价区间，看看此前非官方渠道的预售价格是否合理，以下的正文将为大家揭晓国产新E级全
-									系E 180 L至E 400 L车型的定价区间。</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div id="help5" class="mui-page">
-			<div class="mui-navbar-inner mui-bar mui-bar-nav">
-				<button type="button" class="mui-left mui-action-back mui-btn  mui-btn-link mui-btn-nav mui-pull-left">
-					<span class="mui-icon mui-icon-left-nav"></span>
-				</button>
-				<h1 class="mui-center mui-title">保险索赔</h1>
-			</div>
-			<div class="mui-page-content">
-				<div class="mui-scroll-wrapper">
-					<div class="claimHeader">
-						<a href="insuranceClaim.html">保险索赔</a>
-						<a href="insuranceClaimHelp.html" class="active">保险索赔帮助</a>
-					</div>
-					<div class="mui-scroll">
-						<div class="claimArticle">
-							<h2>公估帮助</h2>
-							<div class="articleModule">
-								<p>《车鲜知》是个什么鬼？您可以把它当做一个研究车界动向的烧脑小组。</p>
-								<p>《车鲜知》的任务是为大家带来最“新鲜”的新车信息预测，以及靠谱儿的车圈儿动态分析，让每一位朋友都能成为车坛中的“先知”。在这里您将看到关于新车定价预测、热辣观点PK、车企动向揭秘等等经过我们烧脑后有理有据的内容。</p>
-							</div>
-							<div class="articleModule">
-								<p>作为汽车的发明者，奔驰每次换代车型的推出都可称得上是引领市场的变革者，即将在8月22日上市的国产新一代E级长
-									轴距版车型同样如此。其与迈巴赫S级相同的车身加长结构以及众多在S级车型中都不曾见到的高科技配置，使本代车
-									型看起来更加的非比寻常。目前国产新一代E级长轴距版的官方指导售价仍保持着神秘，那么我们通过《车鲜知》的
-									分析给大家一个理性的售价区间，看看此前非官方渠道的预售价格是否合理，以下的正文将为大家揭晓国产新E级全
-									系E 180 L至E 400 L车型的定价区间。</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		
-		<script>
-		mui.init();
-		var viewApi = mui('#app').view({
-			defaultPage: '#setting'
-		});
-		mui('.mui-scroll-wrapper').scroll();
-		
+<head>
+  <meta charset="UTF-8">
+  <title>保险索赔帮助</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+  <meta name="format-detection" content="telephone=no"/>
 
-		(function($) {
-			var oldBack = $.back;
-			$.back = function() {
-				if (viewApi.canBack()) {
+  <link rel="stylesheet" href="css/mui.min.css"/>
+  <link rel="stylesheet" href="css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="css/style.css"/>
+  <style>
+    .mui-views,
+    .mui-view,
+    .mui-pages,
+    .mui-page,
+    .mui-page-content {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #efeff4;
+    }
 
-					viewApi.back();
-				} else { 
-					oldBack();
-				}
-			};
+    .mui-pages {
+      top: 46px;
+      height: auto;
+    }
 
-		})(mui);
-	
+    .mui-scroll-wrapper,
+    .mui-scroll {
+      background-color: #efeff4;
+    }
 
-		
-	</script>
-	</body>
+    .mui-page.mui-transitioning {
+      -webkit-transition: -webkit-transform 300ms ease;
+      transition: transform 300ms ease;
+    }
+
+    .mui-page-left {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+
+    .mui-ios .mui-page-left {
+      -webkit-transform: translate3d(-20%, 0, 0);
+      transform: translate3d(-20%, 0, 0);
+    }
+
+    .mui-navbar {
+      position: fixed;
+      right: 0;
+      left: 0;
+      z-index: 10;
+      height: 44px;
+      background-color: #f7f7f8;
+    }
+
+    .mui-navbar .mui-bar {
+      position: absolute;
+      background: transparent;
+      text-align: center;
+    }
+
+    .mui-android .mui-navbar-inner.mui-navbar-left {
+      opacity: 0;
+    }
+
+    .mui-ios .mui-navbar-left .mui-left,
+    .mui-ios .mui-navbar-left .mui-center,
+    .mui-ios .mui-navbar-left .mui-right {
+      opacity: 0;
+    }
+
+    .mui-navbar .mui-btn-nav {
+      -webkit-transition: none;
+      transition: none;
+      -webkit-transition-duration: .0s;
+      transition-duration: .0s;
+    }
+
+    .mui-navbar .mui-bar .mui-title {
+      display: inline-block;
+      width: auto;
+    }
+
+    .mui-page-shadow {
+      position: absolute;
+      right: 100%;
+      top: 0;
+      width: 16px;
+      height: 100%;
+      z-index: -1;
+      content: '';
+    }
+
+    .mui-page-shadow {
+      background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, .01) 50%, rgba(0, 0, 0, .2) 100%);
+      background: linear-gradient(to right, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, .01) 50%, rgba(0, 0, 0, .2) 100%);
+    }
+
+    .mui-navbar-inner.mui-transitioning,
+    .mui-navbar-inner .mui-transitioning {
+      -webkit-transition: opacity 300ms ease, -webkit-transform 300ms ease;
+      transition: opacity 300ms ease, transform 300ms ease;
+    }
+
+    .mui-page {
+      display: none;
+    }
+
+    .mui-pages .mui-page {
+      display: block;
+    }
+
+    .mui-page .mui-table-view:first-child {
+      margin-top: 15px;
+    }
+
+    .mui-page .mui-table-view:last-child {
+      margin-bottom: 30px;
+    }
+
+    .mui-table-view {
+      margin-top: 20px;
+    }
+
+    .mui-table-view span.mui-pull-right {
+      color: #999;
+    }
+
+    .mui-table-view-divider {
+      background-color: #efeff4;
+      font-size: 14px;
+    }
+
+    .mui-table-view-divider:before,
+    .mui-table-view-divider:after {
+      height: 0;
+    }
+
+    .head {
+      height: 40px;
+    }
+
+    #head {
+      line-height: 40px;
+    }
+
+    .head-img {
+      width: 40px;
+      height: 40px;
+    }
+
+    #head-img1 {
+      position: absolute;
+      bottom: 10px;
+      right: 40px;
+      width: 40px;
+      height: 40px;
+    }
+
+    .update {
+      font-style: normal;
+      color: #999999;
+      margin-right: -25px;
+      font-size: 15px
+    }
+
+    .mui-fullscreen {
+      position: fixed;
+      z-index: 20;
+      background-color: #000;
+    }
+
+    .mui-ios .mui-navbar .mui-bar .mui-title {
+      position: static;
+    }
+  </style>
+
+  <script src="js/mui.min.js"></script>
+  <script src="js/mui.view.js "></script>
+  <script src="js/jquery-1.11.1.js"></script>
+  <script src="js/common.js"></script>
+
+</head>
+<body class="mui-fullscreen">
+<!--页面主结构开始-->
+<div id="app" class="mui-views">
+  <div class="mui-view">
+    <div class="mui-navbar">
+    </div>
+    <div class="mui-pages">
+    </div>
+  </div>
+</div>
+<!--页面主结构结束-->
+
+<!--单页面开始-->
+<div id="setting" class="mui-page">
+  <!--页面标题栏开始-->
+  <div class="mui-navbar-inner mui-bar mui-bar-nav">
+    <button type="button" class="mui-left mui-action-back mui-btn  mui-btn-link mui-btn-nav mui-pull-left">
+      <span class="mui-icon mui-icon-left-nav"></span>
+    </button>
+    <h1 class="mui-center mui-title">保险索赔</h1>
+  </div>
+  <!--页面标题栏结束-->
+  <!--页面主内容区开始-->
+  <div class="mui-page-content">
+    <div class="mui-scroll-wrapper">
+      <div class="claimHeader">
+        <a href="javascript:history.go(-1)">保险索赔</a>
+        <a href="insuranceClaimHelp.html" class="active">保险索赔帮助</a>
+      </div>
+      <div class="mui-scroll">
+        <ul class="mui-table-view mui-table-view-striped mui-table-view-condensed claimHelpList">
+          <li class="mui-table-view-cell">
+            <div class="mui-table">
+              <div class="mui-table-cell mui-col-xs-10">
+                <a href="#help">
+                  <h4 class="mui-ellipsis-2">公估帮助</h4>
+                  <h5>《车鲜知》是个什么鬼？您可以把它当做一个研究车界动向的烧脑小组。...</h5>
+
+                  <div class="articleInfo hidden">dsjlfdlg</div>
+                </a>
+              </div>
+              <a class="mui-navigate-right" href="#help"></a>
+              <div class="hide title">1</div>
+              <div class="hide content">2</div>
+            </div>
+          </li>
+          <li class="mui-table-view-cell">
+            <div class="mui-table">
+              <div class="mui-table-cell mui-col-xs-10">
+                <a href="#help">
+                  <h4 class="mui-ellipsis-2">公估帮助</h4>
+                  <h5>《车鲜知》是个什么鬼？您可以把它当做一个研究车界动向的烧脑小组。...</h5>
+
+                  <div class="articleInfo hidden">dsjlfdlg</div>
+                </a>
+              </div>
+              <a class="mui-navigate-right" href="#help"></a>
+            </div>
+          </li>
+          <li class="mui-table-view-cell">
+            <div class="mui-table">
+              <div class="mui-table-cell mui-col-xs-10">
+                <a href="#help">
+                  <h4 class="mui-ellipsis-2">公估帮助</h4>
+                  <h5>《车鲜知》是个什么鬼？您可以把它当做一个研究车界动向的烧脑小组。...</h5>
+
+                  <div class="articleInfo hidden">dsjlfdlg</div>
+                </a>
+              </div>
+              <a class="mui-navigate-right" href="#help"></a>
+            </div>
+          </li>
+          <li class="mui-table-view-cell">
+            <div class="mui-table">
+              <div class="mui-table-cell mui-col-xs-10">
+                <a href="#help">
+                  <h4 class="mui-ellipsis-2">公估帮助</h4>
+                  <h5>《车鲜知》是个什么鬼？您可以把它当做一个研究车界动向的烧脑小组。...</h5>
+
+                  <div class="articleInfo hidden">dsjlfdlg</div>
+                </a>
+              </div>
+              <a class="mui-navigate-right" href="#help"></a>
+            </div>
+          </li>
+          <li class="mui-table-view-cell">
+            <div class="mui-table">
+              <div class="mui-table-cell mui-col-xs-10">
+                <a href="#help">
+                  <h4 class="mui-ellipsis-2">公估帮助</h4>
+                  <h5>《车鲜知》是个什么鬼？您可以把它当做一个研究车界动向的烧脑小组。...</h5>
+
+                  <div class="articleInfo hidden">dsjlfdlg</div>
+                </a>
+              </div>
+              <a class="mui-navigate-right" href="#help"></a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!--页面主内容区结束-->
+</div>
+
+<div id="help" class="mui-page">
+  <div class="mui-navbar-inner mui-bar mui-bar-nav">
+    <button type="button" class="mui-left mui-action-back mui-btn  mui-btn-link mui-btn-nav mui-pull-left">
+      <span class="mui-icon mui-icon-left-nav"></span>
+    </button>
+    <h1 class="mui-center mui-title">保险索赔</h1>
+  </div>
+  <div class="mui-page-content">
+    <div class="mui-scroll-wrapper">
+      <div class="claimHeader">
+        <a href="insuranceClaim.html">保险索赔</a>
+        <a href="insuranceClaimHelp.html" class="active">保险索赔帮助</a>
+      </div>
+      <div class="mui-scroll">
+        <div class="claimArticle">
+          <h2>公估帮助</h2>
+
+          <div class="articleModule">
+            <p>《车鲜知》是个什么鬼？您可以把它当做一个研究车界动向的烧脑小组。</p>
+
+            <p>
+              《车鲜知》的任务是为大家带来最“新鲜”的新车信息预测，以及靠谱儿的车圈儿动态分析，让每一位朋友都能成为车坛中的“先知”。在这里您将看到关于新车定价预测、热辣观点PK、车企动向揭秘等等经过我们烧脑后有理有据的内容。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  mui.init();
+  var viewApi = mui('#app').view({
+    defaultPage: '#setting'
+  });
+  mui('.mui-scroll-wrapper').scroll();
+  (function($){
+    $('.claimHelpList li').on('tap',function(){
+      $('#help h2').html($(this).find('.title').html()||'');
+      $('#help .articleModule').html($(this).find('.content').html()||'');
+    })
+  })(jQuery);
+
+
+  (function ($) {
+    var oldBack = $.back;
+    $.back = function () {
+      if (viewApi.canBack()) {
+
+        viewApi.back();
+      } else {
+        oldBack();
+      }
+    };
+
+  })(mui);
+
+
+</script>
+</body>
 
 </html>
