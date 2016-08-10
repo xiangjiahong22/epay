@@ -18,7 +18,7 @@
 </head>
 <body>
 
-<div class="mui-content" id="myAccount">
+<!--<div class="mui-content" id="myAccount">
   <ul class="accountHeader clear">
     <li class="col-xs-6 noPadding">
       <img src="img/money.png" alt="">
@@ -36,39 +36,132 @@
     </li>
   </ul>
   <h3 class="text-center">余额明细</h3>
-  <ul class="mui-table-view accountDetail">
-    <li class="mui-table-view-cell">
-      <div>
-        <span>接受完成XXXX任务</span>
-        <span class="subtractCount pull-right">-805元</span>
-      </div>
-      <p>
-        <span>余额:258.35元</span>
-        <span class="pull-right">2015-08-21</span>
-      </p>
-    </li>
-    <li class="mui-table-view-cell">
-      <div>
-        <span>接受完成XXXX任务</span>
-        <span class="subtractCount pull-right">-805元</span>
-      </div>
-      <p>
-        <span>余额:258.35元</span>
-        <span class="pull-right">2015-08-21</span>
-      </p>
-    </li>
-    <li class="mui-table-view-cell">
-      <div>
-        <span>接受完成XXXX任务</span>
-        <span class="subtractCount pull-right">-805元</span>
-      </div>
-      <p>
-        <span>余额:258.35元</span>
-        <span class="pull-right">2015-08-21</span>
-      </p>
-    </li>
-  </ul>
-</div>
+	<ul class="mui-table-view accountDetail">
+	    <li class="mui-table-view-cell accountList">
+	      <div>
+	        <span>接受完成XXXX任务</span>
+	        <span class="subtractCount pull-right">-805元</span>
+	      </div>
+	      <p>
+	        <span>余额:258.35元</span>
+	        <span class="pull-right">2015-08-21</span>
+	      </p>
+	    </li>
+	  </ul>
+  
+</div>-->
+
+		<div class="mui-content" id="myAccount">
+			<div id="mallList" class="mui-content mui-scroll-wrapper">
+				<div class="mui-scroll">
+					<!--数据列表-->
+					<ul class="accountHeader clear">
+				    <li class="col-xs-6 noPadding">
+				      <img src="img/money.png" alt="">
+				      <div>
+				        <p>¥1315.14</p>
+				        <p>余额</p>
+				      </div>
+				    </li>
+				    <li class="col-xs-6 noPadding">
+				      <img src="img/card1.png" alt="">
+				      <div>
+				        <p>**** **** **** 6228</p>
+				        <p>银行卡</p>
+				      </div>
+				    </li>
+				  </ul>
+				  <h3 class="text-center">余额明细</h3>
+					<ul class="mui-table-view mallListUl accountDetail">
+						
+					</ul>
+				</div>
+			</div>
+		</div>
+
+<script>
+			mui.init({
+				pullRefresh: {
+					container: '#mallList',
+					down: {
+						callback: pulldownRefresh
+					},
+					up: {
+						contentrefresh: '正在加载...',
+						callback: pullupRefresh
+					}
+				}
+			});
+			/**
+			 * 下拉刷新具体业务实现
+			 */
+			function pulldownRefresh() {
+				setTimeout(function() {
+					var table = document.body.querySelector('.mallListUl');
+					var cells = document.body.querySelectorAll('.mallListLi');
+					for (var i = cells.length, len = i + 7; i < len; i++) {
+						var pullDownHtml='';
+						var li = document.createElement('li');
+						li.className = 'mui-table-view-cell mallListLi';
+
+			      pullDownHtml+='<div>';
+			      pullDownHtml+='  <span>接受完成XXXX任务</span>';
+			      pullDownHtml+='  <span class="subtractCount pull-right">-805元</span>';
+			      pullDownHtml+='</div>';
+			      pullDownHtml+='<p>';
+			      pullDownHtml+='  <span>余额:258.35元</span>';
+			      pullDownHtml+='  <span class="pull-right">2015-08-21</span>';
+			      pullDownHtml+='</p>';
+	    
+	    
+						li.innerHTML=pullDownHtml;
+						//下拉刷新，新纪录插到最前面；
+						table.insertBefore(li, table.firstChild);
+					}
+					mui('#mallList').pullRefresh().endPulldownToRefresh(); //refresh completed
+				}, 1500);
+			}
+			var count = 0;
+			/**
+			 * 上拉加载具体业务实现
+			 */
+			function pullupRefresh() {
+				setTimeout(function() {
+					mui('#mallList').pullRefresh().endPullupToRefresh((++count > 2)); //参数为true代表没有更多数据了。
+					var table = document.body.querySelector('.mallListUl');
+					var cells = document.body.querySelectorAll('.mallListLi');
+					for (var i = cells.length, len = i + 7; i < len; i++) {
+						var pullDownHtml='';
+						var li = document.createElement('li');
+						li.className ='mui-table-view-cell mallListLi';
+						
+						pullDownHtml+='<div>';
+			      pullDownHtml+='  <span>接受完成XXXX任务</span>';
+			      pullDownHtml+='  <span class="subtractCount pull-right">-805元</span>';
+			      pullDownHtml+='</div>';
+			      pullDownHtml+='<p>';
+			      pullDownHtml+='  <span>余额:258.35元</span>';
+			      pullDownHtml+='  <span class="pull-right">2015-08-21</span>';
+			      pullDownHtml+='</p>';
+			      
+						li.innerHTML = pullDownHtml;
+						table.appendChild(li);
+					}
+				}, 1500);
+			}
+			if (mui.os.plus) {
+				mui.plusReady(function() {
+					setTimeout(function() {
+						mui('#mallList').pullRefresh().pullupLoading();
+					}, 1000);
+
+				});
+			} else {
+				mui.ready(function() {
+					mui('#mallList').pullRefresh().pullupLoading();
+				});
+			}
+</script>
 
 </body>
 </html>

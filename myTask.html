@@ -17,7 +17,7 @@
   <script src="js/common.js"></script>
 </head>
 <body>
-<div class="mui-content" id="myTask">
+<!--<div class="mui-content" id="myTask">
   <div class="taskHeader clear">
     <div class="col-xs-6 noPadding taskActive">
       <a href="#">我发布的</a>
@@ -90,7 +90,141 @@
       </li>
     </ul>
   </div>
+</div>-->
+
+<div class="mui-content" id="myTask">
+	<div id="mallList" class="mui-content mui-scroll-wrapper">
+		<div class="mui-scroll taskList" style="margin-top: 0;">
+			<!--数据列表-->
+			<div class="taskHeader clear">
+		    <div class="col-xs-6 noPadding taskActive">
+		      <a href="myTask.html">我发布的</a>
+		    </div>
+		    <div class="col-xs-6 noPadding noneActive">
+		      <a href="myAcTask.html">我接受的</a>
+		    </div>
+		  </div>
+			<ul class="mui-table-view mallListUl">
+				
+			</ul>
+		</div>
+	</div>
 </div>
+
+<script>
+	mui.init({
+		pullRefresh: {
+			container: '#mallList',
+			down: {
+				callback: pulldownRefresh
+			},
+			up: {
+				contentrefresh: '正在加载...',
+				callback: pullupRefresh
+			}
+		}
+	});
+	/**
+	 * 下拉刷新具体业务实现
+	 */
+	function pulldownRefresh() {
+		setTimeout(function() {
+			var table = document.body.querySelector('.mallListUl');
+			var cells = document.body.querySelectorAll('.mui-table-view-cell');
+			for (var i = cells.length, len = i + 7; i < len; i++) {
+				var pullDownHtml='';
+				var li = document.createElement('li');
+				li.className = 'mui-table-view-cell';
+				li.setAttribute('id',1);
+				
+				pullDownHtml+='<div>';
+        pullDownHtml+='  <span class="green">公估一</span>';
+        pullDownHtml+='  <span>保险司法鉴定</span>';
+        pullDownHtml+='  <span class="pull-right blue">待接受</span>';
+        pullDownHtml+='</div>';
+        pullDownHtml+='<div>';
+        pullDownHtml+='  <span class="green">受理方：渤海评估</span>';
+        pullDownHtml+='  <a href="serviceDetail.html" class="pull-right btn-status checkTask">查看详情</a>';
+        pullDownHtml+='</div>';
+        pullDownHtml+='<div class="clear">';
+        pullDownHtml+='  <p class="pull-left">发布时间：2016-03-14</p>';
+        pullDownHtml+='  <p class="pull-right">受理时间：2016-03-18</p>';
+        pullDownHtml+='</div>';
+
+				li.innerHTML=pullDownHtml;
+				//下拉刷新，新纪录插到最前面；
+				table.insertBefore(li, table.firstChild);
+			}
+			mui('#mallList').pullRefresh().endPulldownToRefresh(); //refresh completed
+		}, 1500);
+	}
+	var count = 0;
+	/**
+	 * 上拉加载具体业务实现
+	 */
+	function pullupRefresh() {
+		setTimeout(function() {
+			mui('#mallList').pullRefresh().endPullupToRefresh((++count > 2)); //参数为true代表没有更多数据了。
+			var table = document.body.querySelector('.mallListUl');
+			var cells = document.body.querySelectorAll('.mui-table-view-cell');
+			for (var i = cells.length, len = i + 7; i < len; i++) {
+				var pullDownHtml='';
+				var li = document.createElement('li');
+				li.className ='mui-table-view-cell';
+				li.setAttribute('id',1);
+				
+				pullDownHtml+='<div>';
+        pullDownHtml+='  <span class="green">公估一</span>';
+        pullDownHtml+='  <span>保险司法鉴定</span>';
+        pullDownHtml+='  <span class="pull-right blue">待接受</span>';
+        pullDownHtml+='</div>';
+        pullDownHtml+='<div>';
+        pullDownHtml+='  <span class="green">受理方：渤海评估</span>';
+        pullDownHtml+='  <a href="serviceDetail.html" class="pull-right btn-status checkTask">查看详情</a>';
+        pullDownHtml+='</div>';
+        pullDownHtml+='<div class="clear">';
+        pullDownHtml+='  <p class="pull-left">发布时间：2016-03-14</p>';
+        pullDownHtml+='  <p class="pull-right">受理时间：2016-03-18</p>';
+        pullDownHtml+='</div>';
+	      
+				li.innerHTML = pullDownHtml;
+				table.appendChild(li);
+			}
+		}, 1500);
+	}
+	if (mui.os.plus) {
+		mui.plusReady(function() {
+			setTimeout(function() {
+				mui('#mallList').pullRefresh().pullupLoading();
+			}, 1000);
+
+		});
+	} else {
+		mui.ready(function() {
+			mui('#mallList').pullRefresh().pullupLoading();
+		});
+	}
+	
+	mui(".mallListUl").on('tap','.mui-table-view-cell',function(){
+	  /*var id = this.getAttribute("id");
+	  mui.fire(detail,'getDetail',{id:id});*/
+	  //打开详情
+	  mui.openWindow({
+	    id:'detail',
+	    url:'serviceDetail.html'
+	  });
+	}) 
+
+	mui(".taskHeader").on('tap','.noneActive',function(){
+	  /*var id = this.getAttribute("id");
+	  mui.fire(detail,'getDetail',{id:id});*/
+	  //打开详情
+	  mui.openWindow({
+	    url:'myAcTask.html'
+	  });
+	}) 
+
+</script>
 
 </body>
 </html>
