@@ -9,6 +9,7 @@
 .clear{zoom:1}
 a{color: #333;text-decoration: none;}
 a:hover{color: #333;text-decoration: none;}
+.mui-table-view-cell.mui-active{background: #fff;}
 
 /*个人中心*/
 .userHeader{background: url("../img/userBac.jpg") no-repeat;overflow: hidden;background-size: 100% 100%;}
