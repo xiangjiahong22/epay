@@ -153,13 +153,17 @@ label{font-weight: normal}
 .dealModule ul li{line-height: 0.7rem;margin-bottom: 6px;font-size: 0.38rem;}
 
 /*mall 商城*/
-#mallList{padding: 0 10px 30px;overflow: hidden;}
+#mallList{overflow: hidden;/*position: relative;*/}
 #mallList ul li{margin-top: 10px;}
+#mallList ul li:nth-of-type(2n+1){padding-left: 0;padding-right: 5px;}
+#mallList ul li:nth-of-type(2n){padding-right: 0;padding-left: 5px;}
 #mallList ul li .con{background: #fff;}
 #mallList .details{padding: 0 10px;}
 #mallList .details .name{font-size: 0.38rem;color: #333333;border-bottom: 1px solid #e1e1e1;padding: 5px 0;line-height: 0.6rem;}
 #mallList .details .integral{font-size: 0.35rem;color: #333333;padding: 7px 0;line-height: 0.6rem;}
 #mallList .details .integral .integralNum{color: #f38a74;}
+
+#mallList .mallListUl{padding: 0 5px;}
 
 #mallSearch{padding: 15px;}
 #mallSearch input{background: #fff;}

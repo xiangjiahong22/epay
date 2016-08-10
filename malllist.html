@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>商品列表</title>
+		<link rel="stylesheet" href="css/mui.min.css"  />
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		
+		<script src="js/jquery-1.11.1.js"></script>
+		<script src="js/mui.min.js"></script>
+		<script src="js/common.js"></script>
+	</head>
+	<body>
+		<!--下拉刷新容器-->
+		<div class="mui-content">
+			<div id="mallList" class="mui-content mui-scroll-wrapper">
+				<div class="mui-scroll">
+					<!--数据列表-->
+					<div class="mui-input-row mui-search" id="mallSearch">
+					<input type="search" class="mui-input-clear" placeholder="">
+				</div>
+				<div id="slider" class="mui-slider" >
+					<div class="mui-slider-group mui-slider-loop">
+						<div class="mui-slider-item mui-slider-item-duplicate">
+							<a href="#">
+								<img src="img/mallSlider1.jpg">
+							</a>
+						</div>
+						<div class="mui-slider-item">
+							<a href="#">
+								<img src="img/mallSlider1.jpg">
+							</a>
+						</div>
+						<div class="mui-slider-item">
+							<a href="#">
+								<img src="img/mallSlider1.jpg">
+							</a>
+						</div>
+						<div class="mui-slider-item">
+							<a href="#">
+								<img src="img/mallSlider1.jpg">
+							</a>
+						</div>
+						<div class="mui-slider-item">
+							<a href="#">
+								<img src="img/mallSlider1.jpg">
+							</a>
+						</div>
+						<div class="mui-slider-item mui-slider-item-duplicate">
+							<a href="#">
+								<img src="img/mallSlider1.jpg">
+							</a>
+						</div>
+					</div>
+					<div class="mui-slider-indicator">
+					</div>
+				</div>
+					<ul class="mallListUl">
+						<!--<li class="col-xs-6 col-md-6 noPaddingL minPaddingR mallListLi">
+							<div class="con">
+								<a href="mallDetails.html">
+									<img data-original="img/mallPic1.jpg" alt="" class="img-responsive" />
+									<div class="details">
+										<div class="name">
+											led充电台灯 无闪烁护眼USB调光折叠挂墙
+										</div>
+										<div class="integral">所需积分<span class="integralNum pull-right">100分</span></div>
+									</div>
+								</a>
+							</div>
+						</li>-->
+					</ul>
+				</div>
+			</div>
+		</div>
+		<script>
+			mui.init({
+				pullRefresh: {
+					container: '#mallList',
+					down: {
+						callback: pulldownRefresh
+					},
+					up: {
+						contentrefresh: '正在加载...',
+						callback: pullupRefresh
+					}
+				}
+			});
+			/**
+			 * 下拉刷新具体业务实现
+			 */
+			function pulldownRefresh() {
+				setTimeout(function() {
+					var table = document.body.querySelector('.mallListUl');
+					var cells = document.body.querySelectorAll('.mallListLi');
+					for (var i = cells.length, len = i + 7; i < len; i++) {
+						var pullDownHtml='';
+						var li = document.createElement('li');
+						li.className = 'col-xs-6 col-md-6 mallListLi';
+						pullDownHtml+='<div class="con">';
+						pullDownHtml+='		<a href="mallDetails.html">';
+						pullDownHtml+='			<img src="img/mallPic1.jpg" alt="" class="img-responsive" />';
+						pullDownHtml+='			<div class="details">';
+						pullDownHtml+='				<div class="name">';
+						pullDownHtml+='					led充电台灯 无闪烁护眼USB调光折叠挂墙';
+						pullDownHtml+='				</div>';
+						pullDownHtml+='				<div class="integral">所需积分<span class="integralNum pull-right">100分</span></div>';
+						pullDownHtml+='			</div>';
+						pullDownHtml+='		</a>';
+						pullDownHtml+='	</div>';
+						li.innerHTML=pullDownHtml;
+						//下拉刷新，新纪录插到最前面；
+						table.insertBefore(li, table.firstChild);
+					}
+					mui('#mallList').pullRefresh().endPulldownToRefresh(); //refresh completed
+				}, 1500);
+			}
+			var count = 0;
+			/**
+			 * 上拉加载具体业务实现
+			 */
+			function pullupRefresh() {
+				setTimeout(function() {
+					mui('#mallList').pullRefresh().endPullupToRefresh((++count > 2)); //参数为true代表没有更多数据了。
+					var table = document.body.querySelector('.mallListUl');
+					var cells = document.body.querySelectorAll('.mallListLi');
+					for (var i = cells.length, len = i + 7; i < len; i++) {
+						var pullDownHtml='';
+						var li = document.createElement('li');
+						li.className ='col-xs-6 col-md-6 noPaddingL minPaddingR mallListLi';
+						pullDownHtml+='<div class="con">';
+						pullDownHtml+='		<a href="mallDetails.html">';
+						pullDownHtml+='			<img src="img/mallPic1.jpg" alt="" class="img-responsive" />';
+						pullDownHtml+='			<div class="details">';
+						pullDownHtml+='				<div class="name">';
+						pullDownHtml+='					led充电台灯 无闪烁护眼USB调光折叠挂墙';
+						pullDownHtml+='				</div>';
+						pullDownHtml+='				<div class="integral">所需积分<span class="integralNum pull-right">100分</span></div>';
+						pullDownHtml+='			</div>';
+						pullDownHtml+='		</a>';
+						pullDownHtml+='	</div>';
+						li.innerHTML = pullDownHtml;
+						table.appendChild(li);
+					}
+				}, 1500);
+			}
+			if (mui.os.plus) {
+				mui.plusReady(function() {
+					setTimeout(function() {
+						mui('#mallList').pullRefresh().pullupLoading();
+					}, 1000);
+
+				});
+			} else {
+				mui.ready(function() {
+					mui('#mallList').pullRefresh().pullupLoading();
+				});
+			}
+		</script>
+	</body>
+</html>
