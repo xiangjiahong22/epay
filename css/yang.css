@@ -18,8 +18,8 @@ a:hover{color: #333;text-decoration: none;}
 .userPic img{border-radius: 50%;display: block;margin: 0.4rem auto;width: 22%;}
 .userName{font-size: 0.45rem;line-height: 0.6rem;color: #fff;text-align: center;}
 .userHeader ul li img{width: 30%;display: block;margin: 0.1rem auto;}
-.userHeader ul li p{color: #fff;font-size: 0.35rem;line-height: 0.5rem;}
-.userHeader ul li p:last-child{font-size: 0.25rem;}
+.userHeader ul li p{color: #fff;font-size: 0.45rem;line-height: 0.65rem;}
+.userHeader ul li p:last-child{font-size: 0.35rem;}
 
 .userList{background: #f1f1f1!important;padding-bottom: 1.8rem;}
 .userList h3{font-size: 0.3rem;line-height:0.5rem;padding: 0.5rem 0 0.2rem 0.5rem;color: #999;}
@@ -44,7 +44,7 @@ a:hover{color: #333;text-decoration: none;}
 #checkCount ul{margin-top: 0.6rem;padding-bottom: 1.8rem;}
 #checkCount ul li{padding: 0.5rem 0.3rem;}
 #checkCount ul li div{font-size: 0.4rem;line-height: 0.5rem;}
-#checkCount ul li p{font-size: 0.35rem;line-height: 0.5rem;color: #666;}
+#checkCount ul li p{font-size: 0.4rem;line-height: 0.5rem;color: #666;}
 .addCount{color: #79ccbf;}
 .subtractCount{color: #f38a74;}
 .subtractCount .needext{color: #999999;margin-left: 15px;font-size: 0.35rem;}
@@ -53,7 +53,7 @@ a:hover{color: #333;text-decoration: none;}
 #checkCount .mui-table-view-cell:last-child:after{height: 1px;}
 
 #checkExchange ul{margin-top: 0.6rem;}
-#checkExchange ul li p{font-size: 0.4rem;line-height: 0.6rem;color: #333;margin-bottom: 0.3rem;}
+#checkExchange ul li p{font-size: 0.4rem;line-height: 0.6rem;color: #333;margin-bottom: 0.3rem;white-space: normal}
 #checkExchange .time{color: #999999;}
 .btn-status{padding: 0.05rem 0.2rem;color: #fff;font-size: 0.3rem;border-radius: 3px;}
 .isDistribution{background: #f8b268;}
@@ -148,3 +148,7 @@ a:hover{color: #333;text-decoration: none;}
 .newsDetail h4{color: #666;}
 .newsDetail p{color: #333;text-indent: 2em;background: #fff;padding: 0.5rem 0.3rem;}
 .newsDetail img{max-width: 100%;}
+
+#share{width: 24%;position: absolute;top:0px;left: 38%;}
+#share div{background: #fff;padding: 10px;border-radius: 8px;}
+#share p{color: #fff;font-size: 0.55rem;left: 1.5rem;margin-top: 5px;}
