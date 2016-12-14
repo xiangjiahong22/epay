@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>财险评估师-详情</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+  <meta name="format-detection" content="telephone=no"/>
+
+  <link rel="stylesheet" href="css/mui.min.css"  />
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/yang.css">
+
+  <script src="js/jquery-1.11.1.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/mui.min.js"></script>
+  <script src="js/common.js"></script>
+</head>
+<body>
+<div class="mui-content">
+  <div class="propertyTop">
+    <img src="img/userPic_03.jpg">
+    <h2 class="name">飞创 <span class="tips">[公估师]</span></h2>
+  </div>
+  <div class="propertyIntro">
+    <h3>个人简介</h3>
+    <div class="con">朱燕青女士，毕业于南京审计学院。目前在上海济浩投资管理有限公司担任咨询 总监。在多年的工作中积累了丰富的人脉资源，与多个孵化园</div>
+  </div>
+  <div class="propertyIntro">
+    <h3>案例</h3>
+    <div class="con">
+      <ul>
+        <li class="col-xs-6">
+          <a href="#">
+            <img src="img/claimUploadPic1.jpg" class="img-responsive">
+            <p>2016私家车金融评估</p>
+          </a>
+        </li>
+        <li class="col-xs-6">
+          <a href="#">
+            <img src="img/claimUploadPic1.jpg" class="img-responsive">
+            <p>2016私家车金融评估</p>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="fullSubBtn" style="border-top:15px solid #efeff4" id="contrastSub">
+      <a href="javascript:void(0)">请他评估</a>
+    </div>
+</div>
+
+
+<div id="errorModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document" style="width: 90%;margin: 2.5rem auto">
+    <div class="modal-content">
+    <div class="modal-header">
+      <h4 class="modal-title">评估人信息</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" style="position: relative">
+        <div style="overflow:hidden">
+          <div class="col-xs-12">
+            <div class="mui-input-row">
+              <p class="info">承包公司联系人：李学华</p>
+            </div>
+            <div class="mui-input-row">
+              <p class="info">联系方式：15012457852</p> 
+            </div>
+           </div>
+        </div>
+        <div class="botBtns">
+          <a class="btn-backClose" href="">确定</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+    (function($){
+      $().ready(function(){
+        mui.init();
+
+        $('#contrastSub').on('click',function(){
+          $('#errorModal').modal();
+        })
+
+      })
+    })(jQuery);
+    </script>
+
+</body>
+</html>

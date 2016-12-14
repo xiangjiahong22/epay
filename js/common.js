@@ -20,7 +20,9 @@
 	      winScreen=320;
 	    }
 	    $('html').css('font-size',winScreen/10+'px');
-	   
+
+
+	       
 	   
 	   
 	})
