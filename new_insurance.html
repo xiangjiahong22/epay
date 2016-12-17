@@ -40,12 +40,12 @@
 				</div>
 				<div class="insuranceCon contrastType">
 					<ul>
-						<li class="active">交强险</li>
+						<li>交强险</li>
 						<li>机动车辆损失险</li>
 						<li>第三者责任险</li>
 						<li>抢盗险</li>
 						<li>车上人员责任险</li>
-						<input type="hidden" value="交强险">
+						
 					</ul>
 				</div>
 				<div class="insuranceTit">
@@ -119,9 +119,20 @@
 
 				//投保险种
 				$('.contrastType').on('click','li',function(){
-					$('.contrastType li').removeClass('active');
+					var typeIndex=$(this).index();
+					var typeText=$(this).text();
+					if($(this).attr('class')=='active'){
+						$(this).removeClass('active');
+						$('.contrastType input').filter(function(){
+							return $(this).attr('typeIndex')==typeIndex+1;
+						}).remove();
+					}else{
+						$(this).addClass('active');
+						$('.contrastType').append('<input type="hidden" value="'+typeText+'" name="typeVal[]" typeindex="'+(typeIndex+1)+'">');
+					}
+					/*$('.contrastType li').removeClass('active');
 					$(this).addClass('active');
-					$('.contrastType input').val($(this).text());
+					$('.contrastType input').val($(this).text());*/
 				});
 
 				$('#contrastSub').on('click',function(){
